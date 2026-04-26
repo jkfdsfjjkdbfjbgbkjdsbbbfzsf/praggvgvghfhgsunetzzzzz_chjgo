@@ -923,30 +923,16 @@ const About = () => {
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
               >
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-xl opacity-30 animate-pulse"></div>
-                  <div className="relative w-32 h-32 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-2xl cursor-pointer group">
-                    <p className="text-white text-lg font-bold">Core</p>
-                    <p className="text-white/80 text-xs">Capabilities</p>
+                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-2xl opacity-40 animate-pulse"></div>
+                  <div className="relative w-44 h-44 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-2xl cursor-pointer group">
+                    <p className="text-white text-2xl font-bold">Prasunet</p>
+                    <p className="text-white text-sm font-semibold mt-1">Core</p>
+                    <p className="text-white/80 text-xs mt-1">Capabilities</p>
                   </div>
                 </div>
               </motion.div>
 
-              {/* Node 1 - Top Left */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                whileHover={{ scale: 1.1, y: -5 }}
-                className="absolute top-[10%] left-[20%] z-10"
-              >
-                <div className="relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-blue-300 hover:border-blue-600 transition-colors p-2">
-                    <p className="text-blue-900 text-xs font-bold text-center leading-tight">Cloud</p>
-                    <p className="text-blue-600 text-[10px] text-center leading-tight mt-1">AWS, Azure, GCP</p>
-                  </div>
-                </div>
-              </motion.div>
+           
 
               {/* Node 2 - Top Right */}
               <motion.div
@@ -954,7 +940,7 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
                 whileHover={{ scale: 1.1, y: -5 }}
-                className="absolute top-[10%] right-[20%] z-10"
+                className="absolute top-[0%] right-[45%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -971,7 +957,7 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 whileHover={{ scale: 1.1, x: -5 }}
-                className="absolute top-[40%] left-[15%] z-10"
+                className="absolute top-[35%] left-[15%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -988,7 +974,7 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.25 }}
                 whileHover={{ scale: 1.1, x: 5 }}
-                className="absolute top-[40%] right-[15%] z-10"
+                className="absolute top-[35%] right-[15%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -1005,7 +991,7 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-[10%] left-[15%] z-10"
+                className="absolute bottom-[25%] left-[10%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -1022,7 +1008,7 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.35 }}
                 whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-[10%] right-[15%] z-10"
+                className="absolute bottom-[20%] right-[10%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -1039,7 +1025,7 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
+                className="absolute bottom-0 left-1/2.5 transform -translate-x-1/2 z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
