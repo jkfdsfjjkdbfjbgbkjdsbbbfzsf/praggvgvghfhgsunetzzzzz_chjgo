@@ -1015,8 +1015,6 @@ const About = () => {
                   </div>
                 </div>
               </motion.div>
-                </div>
-              </motion.div>
 
               {/* Node 6 - Bottom Right */}
               <motion.div
