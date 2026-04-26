@@ -1056,7 +1056,7 @@ const About = () => {
                   whileInView={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0 }}
                   whileHover={{ scale: 1.15 }}
-                  className="absolute top-1/2.5 left-1/2.5 transform -translate-x-1/2 -translate-y-1/2 z-20"
+                  className="absolute top-[40%] right-[40%] z-10"
                 >
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-2xl opacity-40 animate-pulse"></div>
@@ -1159,7 +1159,7 @@ const About = () => {
                   whileInView={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   whileHover={{ scale: 1.1, y: 5 }}
-                  className="absolute bottom-0 left-1/2.5 transform -translate-x-1/2 z-10"
+                  className="absolute top-[80%] right-[45%] z-10"
                 >
                   <div className="relative group cursor-pointer">
                     <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
