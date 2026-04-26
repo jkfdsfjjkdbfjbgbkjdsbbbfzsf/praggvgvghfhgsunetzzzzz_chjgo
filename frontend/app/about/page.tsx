@@ -489,9 +489,13 @@ const About = () => {
               >
                 {/* Image Header */}
                 <div className="relative h-32 bg-gradient-to-br from-indigo-500 to-purple-500 overflow-hidden flex items-center justify-center">
-                  <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
-                    💡
-                  </div>
+                  <Image
+                    src="/business-innovation.jpg"
+                    alt="Innovation"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -517,9 +521,13 @@ const About = () => {
               >
                 {/* Image Header */}
                 <div className="relative h-32 bg-gradient-to-br from-pink-500 to-purple-500 overflow-hidden flex items-center justify-center">
-                  <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
-                    🛡️
-                  </div>
+                  <Image
+                    src="/businessintegrity.jpg"
+                    alt="Integrity"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                   <motion.div
                     animate={{ rotate: -360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -545,9 +553,13 @@ const About = () => {
               >
                 {/* Image Header */}
                 <div className="relative h-32 bg-gradient-to-br from-green-500 to-emerald-500 overflow-hidden flex items-center justify-center">
-                  <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
-                    ⭐
-                  </div>
+                  <Image
+                    src="/businessexcellence.webp"
+                    alt="Excellence"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
