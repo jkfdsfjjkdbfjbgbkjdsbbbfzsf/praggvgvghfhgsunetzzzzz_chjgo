@@ -891,21 +891,27 @@ const About = () => {
             </motion.div>
 
             {/* Expertise Nodes Network */}
-            <div className="relative h-[900px] lg:h-[1000px] flex items-center justify-center">
+            <div className="relative h-[700px] lg:h-[800px] flex items-center justify-center">
               {/* SVG Connecting Lines */}
               <svg
                 className="absolute inset-0 w-full h-full"
                 style={{ filter: "drop-shadow(0 0 20px rgba(99, 102, 241, 0.1))" }}
               >
-                {/* Lines connecting nodes */}
-                <line x1="50%" y1="50%" x2="20%" y2="5%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="80%" y2="5%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="15%" y2="48%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="85%" y2="48%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="15%" y2="95%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="85%" y2="95%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
-                <line x1="20%" y1="5%" x2="15%" y2="48%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
-                <line x1="80%" y1="5%" x2="85%" y2="48%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.3" />
+                {/* Lines connecting nodes - from center to all 7 nodes */}
+                <line x1="50%" y1="50%" x2="20%" y2="15%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="80%" y2="15%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="10%" y2="50%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="90%" y2="50%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="20%" y2="85%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="80%" y2="85%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="50%" y2="95%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                
+                {/* Secondary connections between adjacent nodes */}
+                <line x1="20%" y1="15%" x2="10%" y2="50%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="80%" y1="15%" x2="90%" y2="50%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="10%" y1="50%" x2="20%" y2="85%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="90%" y1="50%" x2="80%" y2="85%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                
                 <defs>
                   <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="#4f46e5" stopOpacity="1" />
@@ -924,9 +930,10 @@ const About = () => {
               >
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-xl opacity-30 animate-pulse"></div>
-                  <div className="relative w-32 h-32 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-2xl cursor-pointer group">
-                    <p className="text-white text-lg font-bold">Core</p>
-                    <p className="text-white/80 text-xs">Capabilities</p>
+                  <div className="relative w-32 h-32 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-2xl cursor-pointer">
+                    <div className="text-4xl mb-2">🎯</div>
+                    <p className="text-white text-sm font-bold">Expertise</p>
+                    <p className="text-white/80 text-xs">Hub</p>
                   </div>
                 </div>
               </motion.div>
@@ -936,17 +943,17 @@ const About = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute top-[5%] left-[20%] z-10"
+                whileHover={{ scale: 1.1, y: -5 }}
+                className="absolute top-[15%] left-[20%] z-10"
               >
-                <div className="flex flex-col items-center">
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-blue-300 hover:border-blue-600 transition-colors">
-                    <p className="text-blue-900 text-sm font-bold text-center">Cloud</p>
-                    <p className="text-blue-600 text-xs text-center">Solutions</p>
+                <div className="relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-blue-300 hover:border-blue-600 transition-colors group">
+                    <div className="text-3xl mb-1">☁️</div>
+                    <p className="text-blue-800 text-xs font-semibold text-center">Cloud</p>
                   </div>
-                  <div className="mt-4 text-center bg-blue-50/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-blue-200">
-                    <p className="text-blue-900 text-xs font-semibold">AWS • Azure • GCP</p>
-                    <p className="text-blue-700 text-xs mt-1">Migration • Optimization</p>
+                  <div className="absolute top-full mt-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+                    AWS, Azure, GCP
                   </div>
                 </div>
               </motion.div>
@@ -956,17 +963,17 @@ const About = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute top-[5%] right-[20%] z-10"
+                whileHover={{ scale: 1.1, y: -5 }}
+                className="absolute top-[15%] right-[20%] z-10"
               >
-                <div className="flex flex-col items-center">
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-purple-50 to-purple-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-purple-300 hover:border-purple-600 transition-colors">
-                    <p className="text-purple-900 text-sm font-bold text-center">AI & ML</p>
-                    <p className="text-purple-600 text-xs text-center">Intelligence</p>
+                <div className="relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-purple-50 to-purple-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-purple-300 hover:border-purple-600 transition-colors">
+                    <div className="text-3xl mb-1">🤖</div>
+                    <p className="text-purple-800 text-xs font-semibold text-center">AI/ML</p>
                   </div>
-                  <div className="mt-4 text-center bg-purple-50/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-purple-200">
-                    <p className="text-purple-900 text-xs font-semibold">Deep Learning • NLP</p>
-                    <p className="text-purple-700 text-xs mt-1">Computer Vision • Analytics</p>
+                  <div className="absolute top-full mt-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+                    ML, Deep Learning
                   </div>
                 </div>
               </motion.div>
@@ -976,17 +983,17 @@ const About = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute top-[48%] left-[15%] z-10"
+                whileHover={{ scale: 1.1, x: -5 }}
+                className="absolute top-[50%] left-[10%] z-10"
               >
-                <div className="flex flex-col items-center">
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-amber-300 hover:border-amber-600 transition-colors">
-                    <p className="text-amber-900 text-sm font-bold text-center">Security</p>
-                    <p className="text-amber-600 text-xs text-center">Compliance</p>
+                <div className="relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-amber-300 hover:border-amber-600 transition-colors">
+                    <div className="text-3xl mb-1">🔐</div>
+                    <p className="text-amber-800 text-xs font-semibold text-center">Security</p>
                   </div>
-                  <div className="mt-2 text-center bg-amber-50/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-amber-200">
-                    <p className="text-amber-900 text-xs font-semibold">ISO 27001 • Penetration Testing</p>
-                    <p className="text-amber-700 text-xs mt-1">Threat Detection • Encryption</p>
+                  <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+                    Cybersecurity, ISO
                   </div>
                 </div>
               </motion.div>
@@ -996,17 +1003,17 @@ const About = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.25 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute top-[48%] right-[15%] z-10"
+                whileHover={{ scale: 1.1, x: 5 }}
+                className="absolute top-[50%] right-[10%] z-10"
               >
-                <div className="flex flex-col items-center">
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-green-50 to-green-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-green-300 hover:border-green-600 transition-colors">
-                    <p className="text-green-900 text-sm font-bold text-center">DevOps</p>
-                    <p className="text-green-600 text-xs text-center">Automation</p>
+                <div className="relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-green-50 to-green-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-green-300 hover:border-green-600 transition-colors">
+                    <div className="text-3xl mb-1">⚙️</div>
+                    <p className="text-green-800 text-xs font-semibold text-center">DevOps</p>
                   </div>
-                  <div className="mt-2 text-center bg-green-50/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-green-200">
-                    <p className="text-green-900 text-xs font-semibold">CI/CD • Kubernetes</p>
-                    <p className="text-green-700 text-xs mt-1">Docker • Monitoring • IaC</p>
+                  <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+                    CI/CD, Infrastructure
                   </div>
                 </div>
               </motion.div>
@@ -1016,17 +1023,17 @@ const About = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute bottom-0 left-[15%] z-10"
+                whileHover={{ scale: 1.1, y: 5 }}
+                className="absolute bottom-[15%] left-[20%] z-10"
               >
-                <div className="flex flex-col-reverse items-center">
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-red-300 hover:border-red-600 transition-colors">
-                    <p className="text-red-900 text-sm font-bold text-center">Blockchain</p>
-                    <p className="text-red-600 text-xs text-center">Web3</p>
+                <div className="relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-red-300 hover:border-red-600 transition-colors">
+                    <div className="text-3xl mb-1">⛓️</div>
+                    <p className="text-red-800 text-xs font-semibold text-center">Blockchain</p>
                   </div>
-                  <div className="mb-4 text-center bg-red-50/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-red-200">
-                    <p className="text-red-900 text-xs font-semibold">Smart Contracts • Solidity</p>
-                    <p className="text-red-700 text-xs mt-1">DeFi • NFT • Layer 2</p>
+                  <div className="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+                    Web3, Smart Contracts
                   </div>
                 </div>
               </motion.div>
@@ -1036,17 +1043,17 @@ const About = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.35 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute bottom-0 right-[15%] z-10"
+                whileHover={{ scale: 1.1, y: 5 }}
+                className="absolute bottom-[15%] right-[20%] z-10"
               >
-                <div className="flex flex-col-reverse items-center">
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-indigo-300 hover:border-indigo-600 transition-colors">
-                    <p className="text-indigo-900 text-sm font-bold text-center">Data</p>
-                    <p className="text-indigo-600 text-xs text-center">Analytics</p>
+                <div className="relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-indigo-300 hover:border-indigo-600 transition-colors">
+                    <div className="text-3xl mb-1">📊</div>
+                    <p className="text-indigo-800 text-xs font-semibold text-center">Data</p>
                   </div>
-                  <div className="mb-4 text-center bg-indigo-50/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-indigo-200">
-                    <p className="text-indigo-900 text-xs font-semibold">BI • Data Warehouse</p>
-                    <p className="text-indigo-700 text-xs mt-1">ETL • Big Data • Visualization</p>
+                  <div className="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+                    Analytics, BI, ETL
                   </div>
                 </div>
               </motion.div>
@@ -1056,17 +1063,17 @@ const About = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.1, y: 5 }}
                 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
               >
-                <div className="flex flex-col-reverse items-center">
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-pink-50 to-pink-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-pink-300 hover:border-pink-600 transition-colors">
-                    <p className="text-pink-900 text-sm font-bold text-center">Integration</p>
-                    <p className="text-pink-600 text-xs text-center">APIs</p>
+                <div className="relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-pink-50 to-pink-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-pink-300 hover:border-pink-600 transition-colors">
+                    <div className="text-3xl mb-1">🔗</div>
+                    <p className="text-pink-800 text-xs font-semibold text-center">Integration</p>
                   </div>
-                  <div className="mb-4 text-center bg-pink-50/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-pink-200">
-                    <p className="text-pink-900 text-xs font-semibold">Microservices • REST/GraphQL</p>
-                    <p className="text-pink-700 text-xs mt-1">Message Queues • Event-Driven</p>
+                  <div className="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
+                    APIs, Microservices
                   </div>
                 </div>
               </motion.div>
