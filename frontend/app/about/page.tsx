@@ -276,84 +276,198 @@ const About = () => {
         </section>
 
         {/* VISION & MISSION */}
-        <section className="py-20 px-6 lg:px-24 bg-gradient-to-r from-indigo-50 via-white to-pink-50">
+        <section className="py-20 px-6 lg:px-24 bg-gradient-to-b from-white via-indigo-50 to-white">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-16"
+              className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Our <span className="bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">Vision & Mission</span>
               </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Guiding principles that drive our commitment to excellence and innovation
+              </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {/* Vision & Mission Cards with Images */}
+            <div className="grid lg:grid-cols-2 gap-12 mb-20">
+              {/* Vision Card */}
               <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="bg-gradient-to-br from-indigo-600 to-indigo-700 text-white rounded-3xl p-8 shadow-2xl"
+                className="group"
               >
-                <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
-                    <span className="text-3xl font-bold">V</span>
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300">
+                  {/* Image Section */}
+                  <div className="relative h-72 bg-gradient-to-br from-indigo-500 to-indigo-700 overflow-hidden">
+                    <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                          <span className="text-7xl text-white/80">👁️</span>
+                        </div>
+                        <p className="text-white/60 text-sm font-semibold uppercase tracking-wider">Future Focus</p>
+                      </div>
+                    </div>
+                    {/* Animated Background Shapes */}
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      className="absolute -top-32 -right-32 w-64 h-64 bg-white/5 rounded-full"
+                    ></motion.div>
                   </div>
-                  <h3 className="text-3xl font-bold">Our Vision</h3>
+
+                  {/* Content Section */}
+                  <div className="p-10">
+                    <div className="flex items-center mb-6">
+                      <div className="w-14 h-14 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                        <span className="text-2xl font-bold text-white">V</span>
+                      </div>
+                      <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-lg mb-6">
+                      To be the global leader in digital transformation, empowering businesses of all sizes with innovative technology solutions that drive sustainable growth and create lasting impact in the digital economy.
+                    </p>
+                    <div className="flex items-center text-indigo-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                      <span>Learn More</span>
+                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-indigo-100 leading-relaxed text-lg">
-                  To be the global leader in digital transformation, empowering businesses of all sizes with innovative technology solutions that drive sustainable growth and create lasting impact in the digital economy.
-                </p>
               </motion.div>
 
+              {/* Mission Card */}
               <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="bg-gradient-to-br from-pink-600 to-pink-700 text-white rounded-3xl p-8 shadow-2xl"
+                className="group"
               >
-                <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
-                    <span className="text-3xl font-bold">M</span>
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300">
+                  {/* Image Section */}
+                  <div className="relative h-72 bg-gradient-to-br from-pink-500 to-pink-700 overflow-hidden">
+                    <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                          <span className="text-7xl">🎯</span>
+                        </div>
+                        <p className="text-white/60 text-sm font-semibold uppercase tracking-wider">Our Commitment</p>
+                      </div>
+                    </div>
+                    {/* Animated Background Shapes */}
+                    <motion.div
+                      animate={{ rotate: -360 }}
+                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      className="absolute -bottom-32 -left-32 w-64 h-64 bg-white/5 rounded-full"
+                    ></motion.div>
                   </div>
-                  <h3 className="text-3xl font-bold">Our Mission</h3>
+
+                  {/* Content Section */}
+                  <div className="p-10">
+                    <div className="flex items-center mb-6">
+                      <div className="w-14 h-14 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                        <span className="text-2xl font-bold text-white">M</span>
+                      </div>
+                      <h3 className="text-3xl font-bold text-gray-900">Our Mission</h3>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-lg mb-6">
+                      To deliver exceptional technology services through innovation, integrity, and collaboration. We are committed to understanding our clients&apos; unique challenges and providing tailored solutions that exceed expectations.
+                    </p>
+                    <div className="flex items-center text-pink-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                      <span>Learn More</span>
+                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-pink-100 leading-relaxed text-lg">
-                  To deliver exceptional technology services through innovation, integrity, and collaboration. We are committed to understanding our clients&apos; unique challenges and providing tailored solutions that exceed expectations.
-                </p>
               </motion.div>
             </div>
 
+            {/* Core Values Section */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-center"
+              transition={{ duration: 0.8 }}
+              className="mb-0"
             >
-              <h3 className="text-3xl font-bold text-gray-900 mb-12">Our Core Values</h3>
+              <div className="text-center mb-16">
+                <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our <span className="bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">Core Values</span></h3>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  The fundamental principles that guide every decision and action we take
+                </p>
+              </div>
+
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300">
-                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white text-2xl font-bold">I</span>
+                {/* Innovation */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="bg-gradient-to-br from-indigo-50 to-white rounded-3xl shadow-xl p-10 hover:shadow-2xl transition-all duration-300 border-2 border-indigo-100 group"
+                >
+                  <div className="relative mb-8">
+                    <div className="w-20 h-20 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-4xl">💡</span>
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">1</span>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Innovation</h4>
-                  <p className="text-gray-600 leading-relaxed">We embrace cutting-edge technologies and creative solutions to solve complex business challenges.</p>
-                </div>
-                <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300">
-                  <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white text-2xl font-bold">I</span>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-4 text-center">Innovation</h4>
+                  <p className="text-gray-700 leading-relaxed text-center">
+                    We embrace cutting-edge technologies and creative solutions to solve complex business challenges and stay ahead of industry trends.
+                  </p>
+                </motion.div>
+
+                {/* Integrity */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  className="bg-gradient-to-br from-pink-50 to-white rounded-3xl shadow-xl p-10 hover:shadow-2xl transition-all duration-300 border-2 border-pink-100 group"
+                >
+                  <div className="relative mb-8">
+                    <div className="w-20 h-20 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-4xl">🛡️</span>
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">2</span>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Integrity</h4>
-                  <p className="text-gray-600 leading-relaxed">We uphold the highest ethical standards in all our dealings, ensuring transparency and trust.</p>
-                </div>
-                <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white text-2xl font-bold">E</span>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-4 text-center">Integrity</h4>
+                  <p className="text-gray-700 leading-relaxed text-center">
+                    We uphold the highest ethical standards in all our dealings, ensuring transparency, trust, and accountability in every interaction.
+                  </p>
+                </motion.div>
+
+                {/* Excellence */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="bg-gradient-to-br from-green-50 to-white rounded-3xl shadow-xl p-10 hover:shadow-2xl transition-all duration-300 border-2 border-green-100 group"
+                >
+                  <div className="relative mb-8">
+                    <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-4xl">⭐</span>
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">3</span>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-4">Excellence</h4>
-                  <p className="text-gray-600 leading-relaxed">We are committed to delivering superior quality in every project, exceeding client expectations.</p>
-                </div>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-4 text-center">Excellence</h4>
+                  <p className="text-gray-700 leading-relaxed text-center">
+                    We are committed to delivering superior quality in every project, consistently exceeding client expectations and industry standards.
+                  </p>
+                </motion.div>
               </div>
             </motion.div>
           </div>
