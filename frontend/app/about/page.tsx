@@ -292,9 +292,8 @@ const About = () => {
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
-                  className="relative group"
                 >
-                  <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+                  <div className="relative h-96 rounded-lg overflow-hidden">
                     <Image
                       src="/vision.webp"
                       alt="Our Vision"
@@ -452,9 +451,9 @@ const About = () => {
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="relative group lg:order-1"
+                  className="lg:order-1"
                 >
-                  <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+                  <div className="relative h-96 rounded-lg overflow-hidden">
                     <Image
                       src="/mission.jpg"
                       alt="Our Mission"
