@@ -886,7 +886,7 @@ const About = () => {
                 Our <span className="bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">Expertise Network</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Interconnected capabilities delivering comprehensive technology solutions across all industries.
+                Connected expertise at every layer—from cloud infrastructure to artificial intelligence—accelerating your digital transformation globally.
               </p>
             </motion.div>
 
