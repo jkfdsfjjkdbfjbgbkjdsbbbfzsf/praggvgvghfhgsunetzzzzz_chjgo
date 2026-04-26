@@ -20,7 +20,7 @@ const services = [
   },
   { 
     title: "E-commerce Solutions", 
-    image: "/secommerce.jpg", 
+    image: "/ecommerceimg.avif", 
     description: "Build powerful and feature-rich online stores with secure payment gateways, management systems,  more for seamless operations.",
     href: "/service/ecommerce"
   },
