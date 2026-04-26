@@ -1075,7 +1075,6 @@ const About = () => {
                     <div className="text-3xl mb-1">🔗</div>
                     <p className="text-pink-800 text-xs font-semibold text-center px-1">Integration</p>
                   </div>
-                  </div>
                   <div className="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     APIs, Microservices
                   </div>
