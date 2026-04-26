@@ -891,10 +891,10 @@ const About = () => {
             </motion.div>
 
             {/* Expertise Nodes Network */}
-            <div className="relative h-[600px] lg:h-[700px] flex items-center justify-center">
-              {/* SVG Connecting Lines */}
+            <div className="relative h-[400px] md:h-[500px] lg:h-[700px] flex items-center justify-center">
+              {/* SVG Connecting Lines - Hidden on mobile */}
               <svg
-                className="absolute inset-0 w-full h-full"
+                className="hidden lg:block absolute inset-0 w-full h-full"
                 style={{ filter: "drop-shadow(0 0 20px rgba(99, 102, 241, 0.1))" }}
               >
                 {/* Lines connecting nodes */}
@@ -914,127 +914,262 @@ const About = () => {
                 </defs>
               </svg>
 
-              {/* Center Node - Core */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                whileHover={{ scale: 1.15 }}
-                className="absolute top-1/2.5 left-1/2.5 transform -translate-x-1/2 -translate-y-1/2 z-20"
-              >
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-2xl opacity-40 animate-pulse"></div>
-                  <div className="relative w-44 h-44 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-2xl cursor-pointer group">
-                    <p className="text-white text-2xl font-bold">Prasunet</p>
-                    <p className="text-white text-sm font-semibold mt-1">Core</p>
-                    <p className="text-white/80 text-xs mt-1">Capabilities</p>
-                  </div>
-                </div>
-              </motion.div>
+              {/* Mobile & Tablet Grid Layout */}
+              <div className="lg:hidden w-full">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 px-4">
+                  {/* Center Node - Mobile */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0 }}
+                    className="col-span-2 md:col-span-3 flex justify-center"
+                  >
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-xl opacity-40 animate-pulse"></div>
+                      <div className="relative w-24 md:w-32 h-24 md:h-32 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-lg cursor-pointer">
+                        <p className="text-white text-sm md:text-lg font-bold">Prasunet</p>
+                        <p className="text-white text-xs md:text-xs font-semibold mt-0.5">Core</p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-           
+                  {/* Mobile Node Grid Items */}
+                  {/* Node 1 - Cloud */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.1 }}
+                    className="flex justify-center"
+                  >
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-blue-300 transition-colors p-1">
+                        <p className="text-blue-900 text-[9px] md:text-xs font-bold text-center leading-tight">Cloud</p>
+                        <p className="text-blue-600 text-[7px] md:text-[9px] text-center leading-tight mt-0.5">AWS, Azure, GCP</p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-              {/* Node 2 - Top Right */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.15 }}
-                whileHover={{ scale: 1.1, y: -5 }}
-                className="absolute top-[0%] right-[45%] z-10"
-              >
-                <div className="relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-purple-50 to-purple-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-purple-300 hover:border-purple-600 transition-colors p-2">
-                    <p className="text-purple-900 text-xs font-bold text-center leading-tight">AI & ML</p>
-                    <p className="text-purple-600 text-[10px] text-center leading-tight mt-1">Deep Learning, NLP</p>
-                  </div>
-                </div>
-              </motion.div>
+                  {/* Node 2 - AI & ML */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.15 }}
+                    className="flex justify-center"
+                  >
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-purple-50 to-purple-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-purple-300 transition-colors p-1">
+                        <p className="text-purple-900 text-[9px] md:text-xs font-bold text-center leading-tight">AI & ML</p>
+                        <p className="text-purple-600 text-[7px] md:text-[9px] text-center leading-tight mt-0.5">Deep Learning</p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-              {/* Node 3 - Middle Left */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                whileHover={{ scale: 1.1, x: -5 }}
-                className="absolute top-[35%] left-[15%] z-10"
-              >
-                <div className="relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-amber-300 hover:border-amber-600 transition-colors p-2">
-                    <p className="text-amber-900 text-xs font-bold text-center leading-tight">Security</p>
-                    <p className="text-amber-600 text-[10px] text-center leading-tight mt-1">Cybersecurity, ISO 27001</p>
-                  </div>
-                </div>
-              </motion.div>
+                  {/* Node 3 - Security */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="flex justify-center"
+                  >
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-amber-300 transition-colors p-1">
+                        <p className="text-amber-900 text-[9px] md:text-xs font-bold text-center leading-tight">Security</p>
+                        <p className="text-amber-600 text-[7px] md:text-[9px] text-center leading-tight mt-0.5">Cybersecurity</p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-              {/* Node 4 - Middle Right */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.25 }}
-                whileHover={{ scale: 1.1, x: 5 }}
-                className="absolute top-[35%] right-[15%] z-10"
-              >
-                <div className="relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-green-50 to-green-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-green-300 hover:border-green-600 transition-colors p-2">
-                    <p className="text-green-900 text-xs font-bold text-center leading-tight">DevOps</p>
-                    <p className="text-green-600 text-[10px] text-center leading-tight mt-1">CI/CD, Infrastructure</p>
-                  </div>
-                </div>
-              </motion.div>
+                  {/* Node 4 - DevOps */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.25 }}
+                    className="flex justify-center"
+                  >
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-green-50 to-green-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-green-300 transition-colors p-1">
+                        <p className="text-green-900 text-[9px] md:text-xs font-bold text-center leading-tight">DevOps</p>
+                        <p className="text-green-600 text-[7px] md:text-[9px] text-center leading-tight mt-0.5">CI/CD</p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-              {/* Node 5 - Bottom Left */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-[25%] left-[10%] z-10"
-              >
-                <div className="relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-red-300 hover:border-red-600 transition-colors p-2">
-                    <p className="text-red-900 text-xs font-bold text-center leading-tight">Blockchain</p>
-                    <p className="text-red-600 text-[10px] text-center leading-tight mt-1">Web3, Smart Contracts</p>
-                  </div>
-                </div>
-              </motion.div>
+                  {/* Node 5 - Blockchain */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className="flex justify-center"
+                  >
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-red-300 transition-colors p-1">
+                        <p className="text-red-900 text-[9px] md:text-xs font-bold text-center leading-tight">Blockchain</p>
+                        <p className="text-red-600 text-[7px] md:text-[9px] text-center leading-tight mt-0.5">Web3</p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-              {/* Node 6 - Bottom Right */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.35 }}
-                whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-[20%] right-[10%] z-10"
-              >
-                <div className="relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-indigo-300 hover:border-indigo-600 transition-colors p-2">
-                    <p className="text-indigo-900 text-xs font-bold text-center leading-tight">Data</p>
-                    <p className="text-indigo-600 text-[10px] text-center leading-tight mt-1">Analytics, BI, ETL</p>
-                  </div>
-                </div>
-              </motion.div>
+                  {/* Node 6 - Data */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.35 }}
+                    className="flex justify-center"
+                  >
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-indigo-300 transition-colors p-1">
+                        <p className="text-indigo-900 text-[9px] md:text-xs font-bold text-center leading-tight">Data</p>
+                        <p className="text-indigo-600 text-[7px] md:text-[9px] text-center leading-tight mt-0.5">Analytics</p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-              {/* Node 7 - Bottom Center */}
-              <motion.div
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-0 left-1/2.5 transform -translate-x-1/2 z-10"
-              >
-                <div className="relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-28 h-28 bg-gradient-to-br from-pink-50 to-pink-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-pink-300 hover:border-pink-600 transition-colors p-2">
-                    <p className="text-pink-900 text-xs font-bold text-center leading-tight">Integration</p>
-                    <p className="text-pink-600 text-[10px] text-center leading-tight mt-1">APIs, Microservices</p>
-                  </div>
+                  {/* Node 7 - Integration */}
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    className="col-span-2 md:col-span-1 flex justify-center"
+                  >
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-pink-50 to-pink-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-pink-300 transition-colors p-1">
+                        <p className="text-pink-900 text-[9px] md:text-xs font-bold text-center leading-tight">Integration</p>
+                        <p className="text-pink-600 text-[7px] md:text-[9px] text-center leading-tight mt-0.5">APIs</p>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
-              </motion.div>
+              </div>
+
+              {/* Desktop Circular Layout */}
+              <div className="hidden lg:block absolute inset-0 w-full h-full">
+                {/* Center Node - Desktop */}
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0 }}
+                  whileHover={{ scale: 1.15 }}
+                  className="absolute top-1/2.5 left-1/2.5 transform -translate-x-1/2 -translate-y-1/2 z-20"
+                >
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-2xl opacity-40 animate-pulse"></div>
+                    <div className="relative w-44 h-44 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-2xl cursor-pointer group">
+                      <p className="text-white text-2xl font-bold">Prasunet</p>
+                      <p className="text-white text-sm font-semibold mt-1">Core</p>
+                      <p className="text-white/80 text-xs mt-1">Capabilities</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Node 2 - Top Right */}
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.15 }}
+                  whileHover={{ scale: 1.1, y: -5 }}
+                  className="absolute top-[0%] right-[45%] z-10"
+                >
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="relative w-28 h-28 bg-gradient-to-br from-purple-50 to-purple-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-purple-300 hover:border-purple-600 transition-colors p-2">
+                      <p className="text-purple-900 text-xs font-bold text-center leading-tight">AI & ML</p>
+                      <p className="text-purple-600 text-[10px] text-center leading-tight mt-1">Deep Learning, NLP</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Node 3 - Middle Left */}
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  whileHover={{ scale: 1.1, x: -5 }}
+                  className="absolute top-[35%] left-[15%] z-10"
+                >
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="relative w-28 h-28 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-amber-300 hover:border-amber-600 transition-colors p-2">
+                      <p className="text-amber-900 text-xs font-bold text-center leading-tight">Security</p>
+                      <p className="text-amber-600 text-[10px] text-center leading-tight mt-1">Cybersecurity, ISO 27001</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Node 4 - Middle Right */}
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.25 }}
+                  whileHover={{ scale: 1.1, x: 5 }}
+                  className="absolute top-[35%] right-[15%] z-10"
+                >
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="relative w-28 h-28 bg-gradient-to-br from-green-50 to-green-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-green-300 hover:border-green-600 transition-colors p-2">
+                      <p className="text-green-900 text-xs font-bold text-center leading-tight">DevOps</p>
+                      <p className="text-green-600 text-[10px] text-center leading-tight mt-1">CI/CD, Infrastructure</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Node 5 - Bottom Left */}
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  whileHover={{ scale: 1.1, y: 5 }}
+                  className="absolute bottom-[25%] left-[10%] z-10"
+                >
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="relative w-28 h-28 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-red-300 hover:border-red-600 transition-colors p-2">
+                      <p className="text-red-900 text-xs font-bold text-center leading-tight">Blockchain</p>
+                      <p className="text-red-600 text-[10px] text-center leading-tight mt-1">Web3, Smart Contracts</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Node 6 - Bottom Right */}
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.35 }}
+                  whileHover={{ scale: 1.1, y: 5 }}
+                  className="absolute bottom-[20%] right-[10%] z-10"
+                >
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="relative w-28 h-28 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-indigo-300 hover:border-indigo-600 transition-colors p-2">
+                      <p className="text-indigo-900 text-xs font-bold text-center leading-tight">Data</p>
+                      <p className="text-indigo-600 text-[10px] text-center leading-tight mt-1">Analytics, BI, ETL</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Node 7 - Bottom Center */}
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  whileHover={{ scale: 1.1, y: 5 }}
+                  className="absolute bottom-0 left-1/2.5 transform -translate-x-1/2 z-10"
+                >
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="relative w-28 h-28 bg-gradient-to-br from-pink-50 to-pink-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-pink-300 hover:border-pink-600 transition-colors p-2">
+                      <p className="text-pink-900 text-xs font-bold text-center leading-tight">Integration</p>
+                      <p className="text-pink-600 text-[10px] text-center leading-tight mt-1">APIs, Microservices</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             </div>
 
             {/* Stats Section */}
