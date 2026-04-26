@@ -68,14 +68,14 @@ const About = () => {
           </div>
         </section>
 
-        {/* OUR STORY */}
-        <section className="py-20 px-6 lg:px-24">
+        {/* OUR STORY - VERTICAL WAVE DESIGN */}
+        <section className="py-20 px-6 lg:px-24 relative overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-16"
+              className="text-center mb-20"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Our <span className="bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">Story</span>
@@ -85,57 +85,189 @@ const About = () => {
               </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="space-y-6"
-              >
-                <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Founded in 2020</h3>
-                  <p className="text-gray-700 leading-relaxed mb-6">
-                    Prasunet was founded in 2020 by Pramod Prajapat, a visionary entrepreneur with a passion for leveraging technology to solve real-world business challenges. Starting with a small team of dedicated professionals, Pramod recognized the transformative potential of digital solutions in an increasingly connected world.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed">
-                    What began as a commitment to excellence in web development and mobile applications has evolved into a comprehensive technology partner, offering AI-driven solutions, cloud services, cybersecurity, and more. Our founder&apos;s vision of &quot;technology for everyone&quot; continues to drive our mission of democratizing access to cutting-edge digital tools.
-                  </p>
-                </div>
-              </motion.div>
+            {/* Vertical Wave Timeline */}
+            <div className="relative">
+              {/* Central Wave Line */}
+              <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-500 via-pink-500 to-indigo-500 transform -translate-x-1/2"></div>
 
+              {/* Wave Content Items */}
+              <div className="space-y-12">
+                {/* Item 1 - Left */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-indigo-200">
+                      <h3 className="text-2xl font-bold text-indigo-900 mb-3">Founded in 2020</h3>
+                      <p className="text-indigo-800 leading-relaxed">
+                        Prasunet was founded in 2020 by Pramod Prajapat, a visionary entrepreneur with a passion for leveraging technology to solve real-world business challenges.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-white font-bold text-2xl">2020</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Item 2 - Right */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="flex lg:flex-row-reverse flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-left">
+                    <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-pink-200">
+                      <h3 className="text-2xl font-bold text-pink-900 mb-3">First Enterprise Client</h3>
+                      <p className="text-pink-800 leading-relaxed">
+                        Our first major enterprise partnership marked the beginning of Prasunet's expansion into the corporate sector.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-pink-600 to-pink-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-white font-bold text-2xl">2021</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Item 3 - Left */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-purple-200">
+                      <h3 className="text-2xl font-bold text-purple-900 mb-3">International Expansion</h3>
+                      <p className="text-purple-800 leading-relaxed">
+                        Expanded operations to multiple international markets, establishing our global presence across continents.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-white font-bold text-2xl">2022</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Item 4 - Right */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="flex lg:flex-row-reverse flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-left">
+                    <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-green-200">
+                      <h3 className="text-2xl font-bold text-green-900 mb-3">AI & ML Division Launched</h3>
+                      <p className="text-green-800 leading-relaxed">
+                        Launched our dedicated AI and Machine Learning division to meet growing demand for intelligent solutions.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-white font-bold text-2xl">2023</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Item 5 - Left */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-blue-200">
+                      <h3 className="text-2xl font-bold text-blue-900 mb-3">500+ Projects Milestone</h3>
+                      <p className="text-blue-800 leading-relaxed">
+                        Successfully delivered over 500 enterprise projects, cementing our reputation as an industry leader.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-white font-bold text-2xl">2024</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Item 6 - Right */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 1 }}
+                  className="flex lg:flex-row-reverse flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-left">
+                    <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-amber-200">
+                      <h3 className="text-2xl font-bold text-amber-900 mb-3">Industry Recognition & Awards</h3>
+                      <p className="text-amber-800 leading-relaxed">
+                        Recognized with multiple industry awards and certifications, validating our excellence and commitment to quality.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-amber-600 to-amber-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-white font-bold text-2xl">2025</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Item 7 - Left */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 1.2 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-gradient-to-br from-rose-50 to-rose-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-rose-200">
+                      <h3 className="text-2xl font-bold text-rose-900 mb-3">Next Generation Tech Leadership</h3>
+                      <p className="text-rose-800 leading-relaxed">
+                        Pioneering emerging technologies including Web3, quantum computing integration, and advanced AI systems for tomorrow's challenges.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-rose-600 to-rose-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-white font-bold text-2xl">2026</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Bottom Wave Accent */}
+            <div className="mt-20 text-center">
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.4 }}
+                className="inline-block"
               >
-                <div className="bg-gradient-to-br from-indigo-500 to-pink-600 rounded-3xl p-8 text-white shadow-2xl">
-                  <h3 className="text-2xl font-bold mb-6">Our Growth Journey</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <span>2020: Company founded by Pramod Prajapat</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <span>2021: First enterprise client partnership</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <span>2022: Expanded to international markets</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <span>2023: AI and ML division launched</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <span>2024: 500+ successful projects delivered</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                      <span>2025: Industry recognition and awards</span>
-                    </div>
+                <div className="bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full p-1">
+                  <div className="bg-white rounded-full px-8 py-4">
+                    <p className="text-gray-900 font-semibold">
+                      Continuing our journey of innovation and excellence
+                    </p>
                   </div>
                 </div>
               </motion.div>
