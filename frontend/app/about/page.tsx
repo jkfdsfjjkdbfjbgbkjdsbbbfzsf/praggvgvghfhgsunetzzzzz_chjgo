@@ -934,8 +934,9 @@ const About = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-xl opacity-30 animate-pulse"></div>
                   <div className="relative w-32 h-32 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex flex-col items-center justify-center shadow-2xl cursor-pointer group">
-                    <p className="text-white text-lg font-bold">Core</p>
-                    <p className="text-white/80 text-xs">Capabilities</p>
+                    <div className="text-4xl mb-1">🎯</div>
+                    <p className="text-white text-sm font-bold">Expertise</p>
+                    <p className="text-white/80 text-xs">Hub</p>
                   </div>
                 </div>
               </motion.div>
@@ -950,9 +951,9 @@ const About = () => {
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-24 h-24 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-blue-300 hover:border-blue-600 transition-colors">
-                    <p className="text-blue-900 text-sm font-bold text-center">Cloud</p>
-                    <p className="text-blue-600 text-xs text-center">Solutions</p>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-blue-300 hover:border-blue-600 transition-colors group">
+                    <div className="text-3xl mb-1">☁️</div>
+                    <p className="text-blue-800 text-xs font-semibold text-center px-1">Cloud</p>
                   </div>
                   <div className="absolute top-full mt-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     AWS, Azure, GCP
@@ -970,9 +971,9 @@ const About = () => {
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-24 h-24 bg-gradient-to-br from-purple-50 to-purple-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-purple-300 hover:border-purple-600 transition-colors">
-                    <p className="text-purple-900 text-sm font-bold text-center">AI & ML</p>
-                    <p className="text-purple-600 text-xs text-center">Intelligence</p>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-purple-50 to-purple-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-purple-300 hover:border-purple-600 transition-colors group">
+                    <div className="text-3xl mb-1">🤖</div>
+                    <p className="text-purple-800 text-xs font-semibold text-center px-1">AI/ML</p>
                   </div>
                   <div className="absolute top-full mt-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     ML, Deep Learning
@@ -990,9 +991,9 @@ const About = () => {
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-24 h-24 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-amber-300 hover:border-amber-600 transition-colors">
-                    <p className="text-amber-900 text-sm font-bold text-center">Security</p>
-                    <p className="text-amber-600 text-xs text-center">Compliance</p>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-amber-300 hover:border-amber-600 transition-colors group">
+                    <div className="text-3xl mb-1">🔐</div>
+                    <p className="text-amber-800 text-xs font-semibold text-center px-1">Security</p>
                   </div>
                   <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     Cybersecurity, ISO
@@ -1010,9 +1011,9 @@ const About = () => {
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-24 h-24 bg-gradient-to-br from-green-50 to-green-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-green-300 hover:border-green-600 transition-colors">
-                    <p className="text-green-900 text-sm font-bold text-center">DevOps</p>
-                    <p className="text-green-600 text-xs text-center">Automation</p>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-green-50 to-green-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-green-300 hover:border-green-600 transition-colors group">
+                    <div className="text-3xl mb-1">⚙️</div>
+                    <p className="text-green-800 text-xs font-semibold text-center px-1">DevOps</p>
                   </div>
                   <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     CI/CD, Infrastructure
@@ -1030,9 +1031,9 @@ const About = () => {
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-24 h-24 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-red-300 hover:border-red-600 transition-colors">
-                    <p className="text-red-900 text-sm font-bold text-center">Blockchain</p>
-                    <p className="text-red-600 text-xs text-center">Web3</p>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-red-300 hover:border-red-600 transition-colors group">
+                    <div className="text-3xl mb-1">⛓️</div>
+                    <p className="text-red-800 text-xs font-semibold text-center px-1">Blockchain</p>
                   </div>
                   <div className="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     Web3, Smart Contracts
@@ -1050,9 +1051,9 @@ const About = () => {
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-24 h-24 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-indigo-300 hover:border-indigo-600 transition-colors">
-                    <p className="text-indigo-900 text-sm font-bold text-center">Data</p>
-                    <p className="text-indigo-600 text-xs text-center">Analytics</p>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-indigo-300 hover:border-indigo-600 transition-colors group">
+                    <div className="text-3xl mb-1">📊</div>
+                    <p className="text-indigo-800 text-xs font-semibold text-center px-1">Data</p>
                   </div>
                   <div className="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     Analytics, BI, ETL
@@ -1070,9 +1071,10 @@ const About = () => {
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                  <div className="relative w-24 h-24 bg-gradient-to-br from-pink-50 to-pink-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-pink-300 hover:border-pink-600 transition-colors">
-                    <p className="text-pink-900 text-sm font-bold text-center">Integration</p>
-                    <p className="text-pink-600 text-xs text-center">APIs</p>
+                  <div className="relative w-24 h-24 bg-gradient-to-br from-pink-50 to-pink-100 rounded-full flex flex-col items-center justify-center shadow-lg border-2 border-pink-300 hover:border-pink-600 transition-colors group">
+                    <div className="text-3xl mb-1">🔗</div>
+                    <p className="text-pink-800 text-xs font-semibold text-center px-1">Integration</p>
+                  </div>
                   </div>
                   <div className="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
                     APIs, Microservices
