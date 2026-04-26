@@ -495,18 +495,23 @@ const About = () => {
                   className="flex lg:flex-row flex-col items-center gap-8"
                 >
                   <div className="lg:w-1/2">
-                    <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-indigo-200 relative overflow-hidden">
+                      {/* Decorative lines background */}
+                      <div className="absolute inset-0 opacity-30">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-indigo-200 to-transparent rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="relative flex items-center gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </div>
-                        <div>
-                          <p className="text-white/70 font-semibold uppercase tracking-wide mb-1 text-xs">Achievement</p>
-                          <h3 className="text-5xl font-bold text-white mb-1">1000+</h3>
-                          <p className="text-white/90 font-semibold">Projects Completed</p>
+                        <div className="flex-1">
+                          <p className="text-indigo-600 font-semibold uppercase tracking-wide mb-1 text-xs">Achievement</p>
+                          <h3 className="text-5xl font-bold text-indigo-900 mb-1">1000+</h3>
+                          <p className="text-indigo-700 font-semibold">Projects Completed</p>
                         </div>
+                        <div className="hidden sm:block absolute right-4 top-1/2 transform -translate-y-1/2 h-20 w-1 bg-gradient-to-b from-indigo-300 via-indigo-500 to-indigo-300 rounded-full opacity-30"></div>
                       </div>
                     </div>
                   </div>
@@ -526,18 +531,23 @@ const About = () => {
                   className="flex lg:flex-row-reverse flex-col items-center gap-8"
                 >
                   <div className="lg:w-1/2">
-                    <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-pink-200 relative overflow-hidden">
+                      {/* Decorative lines background */}
+                      <div className="absolute inset-0 opacity-30">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-200 to-transparent rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="relative flex items-center gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </div>
-                        <div>
-                          <p className="text-white/70 font-semibold uppercase tracking-wide mb-1 text-xs">Satisfaction</p>
-                          <h3 className="text-5xl font-bold text-white mb-1">100%</h3>
-                          <p className="text-white/90 font-semibold">Client Satisfaction</p>
+                        <div className="flex-1">
+                          <p className="text-pink-600 font-semibold uppercase tracking-wide mb-1 text-xs">Satisfaction</p>
+                          <h3 className="text-5xl font-bold text-pink-900 mb-1">100%</h3>
+                          <p className="text-pink-700 font-semibold">Client Satisfaction</p>
                         </div>
+                        <div className="hidden sm:block absolute right-4 top-1/2 transform -translate-y-1/2 h-20 w-1 bg-gradient-to-b from-pink-300 via-pink-500 to-pink-300 rounded-full opacity-30"></div>
                       </div>
                     </div>
                   </div>
@@ -557,18 +567,23 @@ const About = () => {
                   className="flex lg:flex-row flex-col items-center gap-8"
                 >
                   <div className="lg:w-1/2">
-                    <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-green-200 relative overflow-hidden">
+                      {/* Decorative lines background */}
+                      <div className="absolute inset-0 opacity-30">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-200 to-transparent rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="relative flex items-center gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.035M15 9h2.707a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.828a2.25 2.25 0 01-2.25 2.25h-3.528a2.25 2.25 0 01-2.146-1.666L9.812 9z" />
                           </svg>
                         </div>
-                        <div>
-                          <p className="text-white/70 font-semibold uppercase tracking-wide mb-1 text-xs">Global Reach</p>
-                          <h3 className="text-5xl font-bold text-white mb-1">65+</h3>
-                          <p className="text-white/90 font-semibold">Countries Served</p>
+                        <div className="flex-1">
+                          <p className="text-green-600 font-semibold uppercase tracking-wide mb-1 text-xs">Global Reach</p>
+                          <h3 className="text-5xl font-bold text-green-900 mb-1">65+</h3>
+                          <p className="text-green-700 font-semibold">Countries Served</p>
                         </div>
+                        <div className="hidden sm:block absolute right-4 top-1/2 transform -translate-y-1/2 h-20 w-1 bg-gradient-to-b from-green-300 via-green-500 to-green-300 rounded-full opacity-30"></div>
                       </div>
                     </div>
                   </div>
@@ -588,18 +603,23 @@ const About = () => {
                   className="flex lg:flex-row-reverse flex-col items-center gap-8"
                 >
                   <div className="lg:w-1/2">
-                    <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-purple-200 relative overflow-hidden">
+                      {/* Decorative lines background */}
+                      <div className="absolute inset-0 opacity-30">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-200 to-transparent rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="relative flex items-center gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3.622a1.5 1.5 0 01-1.5-1.5V5.622a1.5 1.5 0 011.5-1.5h12.756a1.5 1.5 0 011.5 1.5V21z" />
                           </svg>
                         </div>
-                        <div>
-                          <p className="text-white/70 font-semibold uppercase tracking-wide mb-1 text-xs">Community</p>
-                          <h3 className="text-5xl font-bold text-white mb-1">1000+</h3>
-                          <p className="text-white/90 font-semibold">Happy Clients</p>
+                        <div className="flex-1">
+                          <p className="text-purple-600 font-semibold uppercase tracking-wide mb-1 text-xs">Community</p>
+                          <h3 className="text-5xl font-bold text-purple-900 mb-1">1000+</h3>
+                          <p className="text-purple-700 font-semibold">Happy Clients</p>
                         </div>
+                        <div className="hidden sm:block absolute right-4 top-1/2 transform -translate-y-1/2 h-20 w-1 bg-gradient-to-b from-purple-300 via-purple-500 to-purple-300 rounded-full opacity-30"></div>
                       </div>
                     </div>
                   </div>
@@ -619,18 +639,23 @@ const About = () => {
                   className="flex lg:flex-row flex-col items-center gap-8"
                 >
                   <div className="lg:w-1/2">
-                    <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-blue-200 relative overflow-hidden">
+                      {/* Decorative lines background */}
+                      <div className="absolute inset-0 opacity-30">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-200 to-transparent rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="relative flex items-center gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                           </svg>
                         </div>
-                        <div>
-                          <p className="text-white/70 font-semibold uppercase tracking-wide mb-1 text-xs">Support</p>
-                          <h3 className="text-5xl font-bold text-white mb-1">24/7</h3>
-                          <p className="text-white/90 font-semibold">Support Available</p>
+                        <div className="flex-1">
+                          <p className="text-blue-600 font-semibold uppercase tracking-wide mb-1 text-xs">Support</p>
+                          <h3 className="text-5xl font-bold text-blue-900 mb-1">24/7</h3>
+                          <p className="text-blue-700 font-semibold">Support Available</p>
                         </div>
+                        <div className="hidden sm:block absolute right-4 top-1/2 transform -translate-y-1/2 h-20 w-1 bg-gradient-to-b from-blue-300 via-blue-500 to-blue-300 rounded-full opacity-30"></div>
                       </div>
                     </div>
                   </div>
@@ -650,18 +675,23 @@ const About = () => {
                   className="flex lg:flex-row-reverse flex-col items-center gap-8"
                 >
                   <div className="lg:w-1/2">
-                    <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-red-200 relative overflow-hidden">
+                      {/* Decorative lines background */}
+                      <div className="absolute inset-0 opacity-30">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-200 to-transparent rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="relative flex items-center gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                           </svg>
                         </div>
-                        <div>
-                          <p className="text-white/70 font-semibold uppercase tracking-wide mb-1 text-xs">Experience</p>
-                          <h3 className="text-5xl font-bold text-white mb-1">5+</h3>
-                          <p className="text-white/90 font-semibold">Years Experience</p>
+                        <div className="flex-1">
+                          <p className="text-red-600 font-semibold uppercase tracking-wide mb-1 text-xs">Experience</p>
+                          <h3 className="text-5xl font-bold text-red-900 mb-1">5+</h3>
+                          <p className="text-red-700 font-semibold">Years Experience</p>
                         </div>
+                        <div className="hidden sm:block absolute right-4 top-1/2 transform -translate-y-1/2 h-20 w-1 bg-gradient-to-b from-red-300 via-red-500 to-red-300 rounded-full opacity-30"></div>
                       </div>
                     </div>
                   </div>
@@ -681,18 +711,23 @@ const About = () => {
                   className="flex lg:flex-row flex-col items-center gap-8"
                 >
                   <div className="lg:w-1/2">
-                    <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-teal-200 relative overflow-hidden">
+                      {/* Decorative lines background */}
+                      <div className="absolute inset-0 opacity-30">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-200 to-transparent rounded-full blur-3xl"></div>
+                      </div>
+                      <div className="relative flex items-center gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                           </svg>
                         </div>
-                        <div>
-                          <p className="text-white/70 font-semibold uppercase tracking-wide mb-1 text-xs">Reliability</p>
-                          <h3 className="text-5xl font-bold text-white mb-1">100%</h3>
-                          <p className="text-white/90 font-semibold">Uptime Guarantee</p>
+                        <div className="flex-1">
+                          <p className="text-teal-600 font-semibold uppercase tracking-wide mb-1 text-xs">Reliability</p>
+                          <h3 className="text-5xl font-bold text-teal-900 mb-1">100%</h3>
+                          <p className="text-teal-700 font-semibold">Uptime Guarantee</p>
                         </div>
+                        <div className="hidden sm:block absolute right-4 top-1/2 transform -translate-y-1/2 h-20 w-1 bg-gradient-to-b from-teal-300 via-teal-500 to-teal-300 rounded-full opacity-30"></div>
                       </div>
                     </div>
                   </div>
