@@ -286,14 +286,14 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="mb-32"
             >
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
                 {/* Left - Image */}
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
                 >
-                  <div className="relative h-96 rounded-lg overflow-hidden">
+                  <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden">
                     <Image
                       src="/vision.webp"
                       alt="Our Vision"
@@ -312,48 +312,48 @@ const About = () => {
                   className="space-y-6"
                 >
                   <div>
-                    <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
                       Our <span className="bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">Vision</span>
                     </h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full"></div>
+                    <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full"></div>
                   </div>
 
-                  <p className="text-xl text-gray-700 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                     To be the global leader in digital transformation, empowering businesses of all sizes with innovative technology solutions that drive sustainable growth and create lasting impact in the digital economy.
                   </p>
 
-                  <div className="space-y-4 pt-4">
-                    <div className="flex items-start space-x-4">
+                  <div className="space-y-3 md:space-y-4 pt-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="w-6 h-6 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Global Innovation</h4>
-                        <p className="text-gray-600">Pioneering cutting-edge solutions across continents and industries.</p>
+                        <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Global Innovation</h4>
+                        <p className="text-gray-600 text-xs md:text-sm">Pioneering cutting-edge solutions across continents and industries.</p>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="w-6 h-6 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Sustainable Growth</h4>
-                        <p className="text-gray-600">Creating long-term value through responsible and ethical practices.</p>
+                        <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Sustainable Growth</h4>
+                        <p className="text-gray-600 text-xs md:text-sm">Creating long-term value through responsible and ethical practices.</p>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="w-6 h-6 bg-gradient-to-br from-indigo-600 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Digital Impact</h4>
-                        <p className="text-gray-600">Transforming businesses and shaping the future of technology.</p>
+                        <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Digital Impact</h4>
+                        <p className="text-gray-600 text-xs md:text-sm">Transforming businesses and shaping the future of technology.</p>
                       </div>
                     </div>
                   </div>
@@ -361,10 +361,10 @@ const About = () => {
                   <motion.button
                     whileHover={{ scale: 1.05, x: 10 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-pink-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mt-6"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-pink-600 text-white font-semibold py-2 px-6 md:py-3 md:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mt-6 text-sm md:text-base"
                   >
                     Learn More About Our Vision
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </motion.button>
@@ -379,7 +379,7 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="mb-20"
             >
-              <div className="grid lg:grid-cols-2 gap-12 items-center lg:auto-cols-fr">
+              <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center lg:auto-cols-fr">
                 {/* Left - Content */}
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
@@ -388,48 +388,48 @@ const About = () => {
                   className="space-y-6 lg:order-2"
                 >
                   <div>
-                    <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
                       Our <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Mission</span>
                     </h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full"></div>
+                    <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full"></div>
                   </div>
 
-                  <p className="text-xl text-gray-700 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                     To deliver exceptional technology services through innovation, integrity, and collaboration. We are committed to understanding our clients' unique challenges and providing tailored solutions that exceed expectations, while maintaining the highest standards of quality and professionalism.
                   </p>
 
-                  <div className="space-y-4 pt-4">
-                    <div className="flex items-start space-x-4">
+                  <div className="space-y-3 md:space-y-4 pt-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="w-6 h-6 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Client-Centric Approach</h4>
-                        <p className="text-gray-600">Every solution is designed with your specific needs and goals in mind.</p>
+                        <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Client-Centric Approach</h4>
+                        <p className="text-gray-600 text-xs md:text-sm">Every solution is designed with your specific needs and goals in mind.</p>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="w-6 h-6 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Excellence & Quality</h4>
-                        <p className="text-gray-600">Delivering high-quality solutions that stand the test of time.</p>
+                        <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Excellence & Quality</h4>
+                        <p className="text-gray-600 text-xs md:text-sm">Delivering high-quality solutions that stand the test of time.</p>
                       </div>
                     </div>
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 md:space-x-4">
                       <div className="w-6 h-6 bg-gradient-to-br from-pink-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Trusted Partnership</h4>
-                        <p className="text-gray-600">Building lasting relationships based on transparency and mutual success.</p>
+                        <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Trusted Partnership</h4>
+                        <p className="text-gray-600 text-xs md:text-sm">Building lasting relationships based on transparency and mutual success.</p>
                       </div>
                     </div>
                   </div>
@@ -437,10 +437,10 @@ const About = () => {
                   <motion.button
                     whileHover={{ scale: 1.05, x: 10 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mt-6"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold py-2 px-6 md:py-3 md:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mt-6 text-sm md:text-base"
                   >
                     Learn More About Our Mission
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </motion.button>
@@ -453,7 +453,7 @@ const About = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="lg:order-1"
                 >
-                  <div className="relative h-96 rounded-lg overflow-hidden">
+                  <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden">
                     <Image
                       src="/mission.jpg"
                       alt="Our Mission"
