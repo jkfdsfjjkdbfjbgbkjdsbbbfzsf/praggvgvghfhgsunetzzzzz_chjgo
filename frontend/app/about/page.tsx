@@ -897,20 +897,23 @@ const About = () => {
                 className="absolute inset-0 w-full h-full"
                 style={{ filter: "drop-shadow(0 0 20px rgba(99, 102, 241, 0.1))" }}
               >
-                {/* Lines connecting nodes - from center to all 7 nodes */}
-                <line x1="50%" y1="50%" x2="20%" y2="15%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
-                <line x1="50%" y1="50%" x2="80%" y2="15%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
-                <line x1="50%" y1="50%" x2="10%" y2="50%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
-                <line x1="50%" y1="50%" x2="90%" y2="50%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
-                <line x1="50%" y1="50%" x2="20%" y2="85%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
-                <line x1="50%" y1="50%" x2="80%" y2="85%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
-                <line x1="50%" y1="50%" x2="50%" y2="95%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                {/* Lines connecting center to all 7 nodes - diamond shape */}
+                <line x1="50%" y1="50%" x2="50%" y2="15%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="25%" y2="35%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="75%" y2="35%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="5%" y2="50%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="95%" y2="50%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="25%" y2="65%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
+                <line x1="50%" y1="50%" x2="75%" y2="65%" stroke="url(#gradient1)" strokeWidth="2" opacity="0.4" />
                 
-                {/* Secondary connections between adjacent nodes */}
-                <line x1="20%" y1="15%" x2="10%" y2="50%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
-                <line x1="80%" y1="15%" x2="90%" y2="50%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
-                <line x1="10%" y1="50%" x2="20%" y2="85%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
-                <line x1="90%" y1="50%" x2="80%" y2="85%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                {/* Secondary connections - diamond edges */}
+                <line x1="50%" y1="15%" x2="25%" y2="35%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="50%" y1="15%" x2="75%" y2="35%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="25%" y1="35%" x2="5%" y2="50%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="75%" y1="35%" x2="95%" y2="50%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="5%" y1="50%" x2="25%" y2="65%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="95%" y1="50%" x2="75%" y2="65%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
+                <line x1="25%" y1="65%" x2="75%" y2="65%" stroke="url(#gradient1)" strokeWidth="1.5" opacity="0.2" />
                 
                 <defs>
                   <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -937,13 +940,13 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* Node 1 - Top Left */}
+              {/* Node 1 - Top */}
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 whileHover={{ scale: 1.1, y: -5 }}
-                className="absolute top-[15%] left-[20%] z-10"
+                className="absolute top-[15%] left-1/2 transform -translate-x-1/2 z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -957,13 +960,13 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* Node 2 - Top Right */}
+              {/* Node 2 - Upper Left */}
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
                 whileHover={{ scale: 1.1, y: -5 }}
-                className="absolute top-[15%] right-[20%] z-10"
+                className="absolute top-[35%] left-[25%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -977,13 +980,13 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* Node 3 - Middle Left */}
+              {/* Node 3 - Upper Right */}
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                whileHover={{ scale: 1.1, x: -5 }}
-                className="absolute top-[50%] left-[10%] z-10"
+                whileHover={{ scale: 1.1, y: -5 }}
+                className="absolute top-[35%] right-[25%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -997,13 +1000,13 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* Node 4 - Middle Right */}
+              {/* Node 4 - Middle Left */}
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.25 }}
-                whileHover={{ scale: 1.1, x: 5 }}
-                className="absolute top-[50%] right-[10%] z-10"
+                whileHover={{ scale: 1.1, x: -5 }}
+                className="absolute top-[50%] left-[5%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -1017,13 +1020,13 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* Node 5 - Bottom Left */}
+              {/* Node 5 - Middle Right */}
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-[15%] left-[20%] z-10"
+                whileHover={{ scale: 1.1, x: 5 }}
+                className="absolute top-[50%] right-[5%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -1037,13 +1040,13 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* Node 6 - Bottom Right */}
+              {/* Node 6 - Lower Left */}
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.35 }}
                 whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-[15%] right-[20%] z-10"
+                className="absolute top-[65%] left-[25%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -1057,13 +1060,13 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* Node 7 - Bottom Center */}
+              {/* Node 7 - Lower Right */}
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 whileHover={{ scale: 1.1, y: 5 }}
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
+                className="absolute top-[65%] right-[25%] z-10"
               >
                 <div className="relative group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
