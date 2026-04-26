@@ -920,7 +920,7 @@ const About = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0 }}
                 whileHover={{ scale: 1.15 }}
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
+                className="absolute top-1/2.5 left-1/2.5 transform -translate-x-1/2 -translate-y-1/2 z-20"
               >
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full blur-2xl opacity-40 animate-pulse"></div>
@@ -1046,7 +1046,7 @@ const About = () => {
                 className="text-center"
               >
                 <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-2">
-                  500+
+                  1000+
                 </div>
                 <p className="text-gray-600">Successful Projects Delivered</p>
               </motion.div>
@@ -1057,7 +1057,7 @@ const About = () => {
                 className="text-center"
               >
                 <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-2">
-                  98%
+                  100%
                 </div>
                 <p className="text-gray-600">Client Satisfaction Rate</p>
               </motion.div>
@@ -1068,7 +1068,7 @@ const About = () => {
                 className="text-center"
               >
                 <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-2">
-                  50+
+                  65+
                 </div>
                 <p className="text-gray-600">Countries Global Presence</p>
               </motion.div>
