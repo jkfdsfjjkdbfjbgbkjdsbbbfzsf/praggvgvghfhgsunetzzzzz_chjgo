@@ -463,47 +463,265 @@ const About = () => {
           </div>
         </section>
 
-        {/* COMPANY STATISTICS */}
-        <section className="py-20 px-6 lg:px-24">
+        {/* COMPANY STATISTICS - VERTICAL WAVE */}
+        <section className="py-24 px-6 lg:px-24 relative overflow-hidden bg-gradient-to-b from-white via-indigo-50 to-white">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-16"
+              className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Our <span className="bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">Impact</span> in Numbers
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Measurable results that showcase our commitment to excellence and client success.
+                Measurable results that showcase our commitment to excellence and client success
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { number: "500+", label: "Projects Completed", color: "from-indigo-500 to-indigo-600" },
-                { number: "98%", label: "Client Satisfaction", color: "from-pink-500 to-pink-600" },
-                { number: "50+", label: "Countries Served", color: "from-green-500 to-green-600" },
-                { number: "1000+", label: "Happy Clients", color: "from-purple-500 to-purple-600" },
-                { number: "24/7", label: "Support Available", color: "from-blue-500 to-blue-600" },
-                { number: "5+", label: "Years Experience", color: "from-red-500 to-red-600" },
-                { number: "200+", label: "Expert Team Members", color: "from-yellow-500 to-yellow-600" },
-                { number: "99.9%", label: "Uptime Guarantee", color: "from-teal-500 to-teal-600" }
-              ].map((stat, idx) => (
+            {/* Vertical Wave Timeline */}
+            <div className="relative">
+              {/* Central Wave Line */}
+              <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-500 via-pink-500 to-indigo-500 transform -translate-x-1/2"></div>
+
+              {/* Wave Content Items */}
+              <div className="space-y-12">
+                {/* Stat 1 - Left */}
                 <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: idx * 0.1 }}
-                  className="text-center group"
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
                 >
-                  <div className={`bg-gradient-to-r ${stat.color} rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2`}>
-                    <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
-                    <div className="text-white/90 font-medium">{stat.label}</div>
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-indigo-100 group">
+                      <div className="flex items-start gap-4 mb-4 justify-end">
+                        <div>
+                          <p className="text-indigo-600 font-semibold uppercase tracking-wide mb-2 text-sm">Achievement</p>
+                          <h3 className="text-5xl font-bold text-indigo-900 mb-1">1000+</h3>
+                          <p className="text-indigo-700 font-semibold">Projects Completed</p>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-lg font-bold text-white">1</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
                 </motion.div>
-              ))}
+
+                {/* Stat 2 - Right */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.1 }}
+                  className="flex lg:flex-row-reverse flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-left">
+                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-pink-100 group">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <p className="text-pink-600 font-semibold uppercase tracking-wide mb-2 text-sm">Satisfaction</p>
+                          <h3 className="text-5xl font-bold text-pink-900 mb-1">100%</h3>
+                          <p className="text-pink-700 font-semibold">Client Satisfaction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-pink-600 to-pink-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-lg font-bold text-white">2</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Stat 3 - Left */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-green-100 group">
+                      <div className="flex items-start gap-4 mb-4 justify-end">
+                        <div>
+                          <p className="text-green-600 font-semibold uppercase tracking-wide mb-2 text-sm">Global Reach</p>
+                          <h3 className="text-5xl font-bold text-green-900 mb-1">65+</h3>
+                          <p className="text-green-700 font-semibold">Countries Served</p>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.035M15 9h2.707a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.828a2.25 2.25 0 01-2.25 2.25h-3.528a2.25 2.25 0 01-2.146-1.666L9.812 9z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-lg font-bold text-white">3</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Stat 4 - Right */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className="flex lg:flex-row-reverse flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-left">
+                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-purple-100 group">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3.622a1.5 1.5 0 01-1.5-1.5V5.622a1.5 1.5 0 011.5-1.5h12.756a1.5 1.5 0 011.5 1.5V21z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <p className="text-purple-600 font-semibold uppercase tracking-wide mb-2 text-sm">Community</p>
+                          <h3 className="text-5xl font-bold text-purple-900 mb-1">1000+</h3>
+                          <p className="text-purple-700 font-semibold">Happy Clients</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-lg font-bold text-white">4</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Stat 5 - Left */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 group">
+                      <div className="flex items-start gap-4 mb-4 justify-end">
+                        <div>
+                          <p className="text-blue-600 font-semibold uppercase tracking-wide mb-2 text-sm">Support</p>
+                          <h3 className="text-5xl font-bold text-blue-900 mb-1">24/7</h3>
+                          <p className="text-blue-700 font-semibold">Support Available</p>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-lg font-bold text-white">5</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Stat 6 - Right */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="flex lg:flex-row-reverse flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-left">
+                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-red-100 group">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <p className="text-red-600 font-semibold uppercase tracking-wide mb-2 text-sm">Experience</p>
+                          <h3 className="text-5xl font-bold text-red-900 mb-1">5+</h3>
+                          <p className="text-red-700 font-semibold">Years Experience</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-lg font-bold text-white">6</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+
+                {/* Stat 7 - Left */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="flex lg:flex-row flex-col items-center gap-8"
+                >
+                  <div className="lg:w-1/2 lg:text-right">
+                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-teal-100 group">
+                      <div className="flex items-start gap-4 mb-4 justify-end">
+                        <div>
+                          <p className="text-teal-600 font-semibold uppercase tracking-wide mb-2 text-sm">Reliability</p>
+                          <h3 className="text-5xl font-bold text-teal-900 mb-1">100%</h3>
+                          <p className="text-teal-700 font-semibold">Uptime Guarantee</p>
+                        </div>
+                        <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:w-auto flex justify-center">
+                    <div className="relative w-16 h-16 bg-gradient-to-r from-teal-600 to-teal-700 rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-white">
+                      <span className="text-lg font-bold text-white">7</span>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-16"></div>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Bottom Wave Accent */}
+            <div className="mt-20 text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                className="inline-block"
+              >
+                <div className="bg-gradient-to-r from-indigo-600 to-pink-600 rounded-full p-1">
+                  <div className="bg-white rounded-full px-8 py-4">
+                    <p className="text-gray-900 font-semibold">
+                      Driving excellence through measurable impact
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
