@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Linkedin, Github, AlertCircle, CheckCircle, Briefcase, Users, Zap, Globe, Target, Award, MapPin, Clock, DollarSign, Star, Heart, Coffee, Code, Shield, TrendingUp } from "lucide-react";
 import Navbar from "@/components/home/header/navbar";
 import Footer from "@/components/home/footer-section";
 import Image from "next/image";
+import HeroSection from "@/components/home/hero-section";
 import Stepper from "@/components/ui/stepper";
 
 interface FormData {
@@ -1756,39 +1757,26 @@ const CareerPage = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative text-white min-h-screen flex items-center justify-center px-4 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/itcompanybuilding.jpeg"
-            alt="Team collaboration"
-            fill
-            className="object-cover"
-          />
-        </div>
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative max-w-6xl mx-auto text-center">
-          <h1 className="text-6xl font-bold mb-6">Shape the Future with Us</h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Join a global team of innovators, problem-solvers, and technology leaders. At Prasunet, we don&apos;t just build software—we create solutions that transform industries and impact millions of lives.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
-              onClick={() => setShowForm(true)}
-              className="px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
-            >
-              Apply Now
-            </button>
-            <button
-              onClick={() => document.getElementById('jobs')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-all"
-            >
-              Explore Opportunities
-            </button>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section (reused from Home hero) */}
+      <HeroSection
+        mainTitle={
+          <span className="text-emerald-400 font-bold">Shape the Future with Us</span>
+        }
+        eyebrow="Careers"
+        description={
+          "Join a global team of innovators, problem-solvers, and technology leaders. At Prasunet, we don't just build software—we create solutions that transform industries and impact millions of lives."
+        }
+        primaryCta={{ label: "Apply Now", onClick: () => setShowForm(true) }}
+        secondaryCta={{ label: "Explore Opportunities", onClick: () => document.getElementById('jobs')?.scrollIntoView({ behavior: 'smooth' }) }}
+        backgroundData={[
+          { src: "/careerheroimg2.webp", title: "Collaborative Culture", content: "We foster a culture of learning, growth, and shared success across distributed teams." },
+          { src: "/carrerheroimg4.webp", title: "Innovative Projects", content: "Work on innovative projects that push the boundaries of technology and product design." },
+          { src: "/careerheroimg5.webp", title: "Global Impact", content: "Deliver solutions used by customers around the world and impact millions of lives." },
+        ]}
+        overlayOpacity={0.12}
+        intervalMs={3000}
+        showWave={false}
+      />
 
    
 

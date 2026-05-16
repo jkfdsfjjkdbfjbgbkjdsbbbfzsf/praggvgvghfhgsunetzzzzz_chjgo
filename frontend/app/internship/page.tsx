@@ -13,6 +13,7 @@ import { Loader2, CheckCircle } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import Navbar from "@/components/home/header/navbar";
 import Footer from "@/components/home/footer-section";
+import HeroSection from "@/components/home/hero-section";
 
 export default function Internship() {
   const [formData, setFormData] = useState({
@@ -137,8 +138,33 @@ export default function Internship() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
+
+      <HeroSection
+        mainTitle={
+          <span className="text-emerald-400 font-bold">Launch Your Internship Journey</span>
+        }
+        eyebrow={
+          <span className="text-white font-bold text-[0.72rem] tracking-[0.2em] uppercase">
+            Internship Program
+          </span>
+        }
+        description={
+          "Kickstart your career at Prasunet with hands-on internship opportunities, mentorship from senior engineers, and real product experience. Build market-ready skills while contributing to projects that solve real industry problems."
+        }
+        primaryCta={{ label: "Apply Now", href: "#application" }}
+        secondaryCta={{ label: "See Internship Roles", href: "#application" }}
+        backgroundData={[
+          { src: "/internshipheroimg7.jpg", title: "Real Project Experience", content: "Work on live products and gain practical skills across software development, cloud, and AI." },
+          { src: "/internshipheroimg12.jpg", title: "Mentorship & Growth", content: "Learn from experienced engineers, get regular feedback, and grow your career with guided support." },
+          { src: "/internshipheroimg11.webp", title: "Launch Your Career", content: "Build a standout internship portfolio while contributing to solutions that make an impact worldwide." },
+        ]}
+        overlayOpacity={0.12}
+        intervalMs={3000}
+        showWave={false}
+      />
+
       <div className="flex-1 bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div id="application" className="max-w-4xl mx-auto">
           {/* Header Section */}
           <div className="mb-12">
             <div className="mb-4">
