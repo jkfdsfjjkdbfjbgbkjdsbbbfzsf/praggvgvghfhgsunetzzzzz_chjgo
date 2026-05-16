@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import { CheckCircle2, Globe2, ShieldCheck, Timer } from "lucide-react";
+import { motion } from "framer-motion";
 
 const metricCards = [
-  { value: "1000+", label: "Enterprise Projects", desc: "Successfully delivered over 1000 complex enterprise-level projects across various industries, ensuring scalability and high performance.", icon: <CheckCircle2 className="w-5 h-5" /> },
-  { value: "65+", label: "Countries Enabled", desc: "Operating in more than 65 countries worldwide, providing localized expertise and global reach for international clients.", icon: <Globe2 className="w-5 h-5" /> },
-  { value: "24/7", label: "Operational Coverage", desc: "Round-the-clock support and monitoring to ensure continuous operations and rapid response to any issues.", icon: <Timer className="w-5 h-5" /> },
-  { value: "100%", label: "Service Reliability", desc: "Achieving 100% service reliability through robust infrastructure, proactive maintenance, and quality assurance.", icon: <ShieldCheck className="w-5 h-5" /> },
+  { value: "1000+", label: "Enterprise Projects", desc: "1000+ enterprise projects delivered worldwide.", icon: <CheckCircle2 className="w-5 h-5" /> },
+  { value: "65+", label: "Countries Enabled", desc: "Operating across 65+ countries with local teams.", icon: <Globe2 className="w-5 h-5" /> },
+  { value: "24/7", label: "Operational Coverage", desc: "24/7 monitoring and rapid response.", icon: <Timer className="w-5 h-5" /> },
+  { value: "100%", label: "Service Reliability", desc: "Enterprise-grade reliability and proactive maintenance.", icon: <ShieldCheck className="w-5 h-5" /> },
 ];
 
 const deliveryJourney = [
@@ -17,75 +18,176 @@ const deliveryJourney = [
   { phase: "04", title: "Continuous Value", desc: "Optimize performance, adoption, and long-term ROI." },
 ];
 
+const timelineImages = [
+  '/BusinessDiscovery.png',
+  '/SolutionBlueprint.png',
+  '/ControlledDelivery.png',
+  '/ContinuousValue.png',
+];
+
 export default function Stats() {
   return (
     <div className="bg-gradient-to-b from-slate-100 via-white to-slate-50 rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
-      <section className="py-12 md:py-16">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-8 items-stretch">
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 md:p-10 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.18em] text-emerald-700 font-semibold mb-3">Executive Snapshot</p>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-slate-900 leading-tight">
-                Enterprise Execution Built for Outcomes
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <motion.div
+              className="pr-6"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="text-sm uppercase tracking-[0.18em] text-emerald-700 font-semibold">Executive Snapshot</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mt-2">
+                Enterprise execution that scales with your business
               </h2>
-              <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed">
-                Prasunet combines strategic consulting and engineering precision to help organizations modernize
-                confidently. Our delivery framework ensures each initiative moves from business intent to measurable
-                impact with security, reliability, and transparency.
+              <p className="text-slate-600 text-base md:text-lg mt-4 max-w-xl">
+                We design, build and operate mission-critical systems with enterprise-grade security and predictable
+                delivery. From initial discovery to ongoing operations, Prasunet helps teams move faster with confidence.
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <span className="text-sm px-4 py-2 rounded-full border border-slate-300 bg-slate-50 text-slate-700">Governed Delivery</span>
-                <span className="text-sm px-4 py-2 rounded-full border border-slate-300 bg-slate-50 text-slate-700">Risk-Aware Execution</span>
-                <span className="text-sm px-4 py-2 rounded-full border border-slate-300 bg-slate-50 text-slate-700">Business-First Outcomes</span>
-              </div>
-            </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              {metricCards.map((card) => (
-                <div
-                  key={card.label}
-                  className="rounded-2xl border border-slate-200 bg-white p-5 text-left text-slate-900 shadow-sm hover:shadow-md transition"
-                >
-                  <div className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-emerald-100 text-emerald-700 mb-3">
-                    {card.icon}
-                  </div>
-                  <p className="text-2xl md:text-3xl font-bold">{card.value}</p>
-                  <p className="text-sm text-slate-600 mt-1">{card.label}</p>
-                  <p className="text-xs text-slate-500 mt-2 leading-relaxed">{card.desc}</p>
-                </div>
-              ))}
-            </div>
+              <div className="mt-6 flex items-center gap-4">
+                <a href="/contact" className="inline-flex items-center px-5 py-3 bg-emerald-600 text-white rounded-lg font-medium shadow-sm hover:bg-emerald-700">Contact Sales</a>
+                <a href="#metrics" className="text-emerald-700 font-semibold hover:underline">See our metrics →</a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="flex justify-end w-full"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="w-full rounded-none">
+                <Image src="/clients/HOMEPAGEIMG.png" alt="Global presence" width={1440} height={900} className="w-full h-auto object-contain" />
+              </div>
+            </motion.div>
           </div>
 
-          <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-6 md:p-8 shadow-sm">
-            <p className="text-xs uppercase tracking-[0.14em] text-emerald-700 font-semibold mb-5">Transformation Framework</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {deliveryJourney.map((item) => (
-                <div key={item.phase} className="relative rounded-xl p-4 bg-slate-50 border border-slate-200">
-                  <div className="absolute top-0 left-0 w-full h-1 rounded-t-xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500" />
-                  <p className="pt-2 text-xs font-bold uppercase tracking-wide text-emerald-700">Phase {item.phase}</p>
-                  <h4 className="text-lg font-semibold text-slate-900 mt-2">{item.title}</h4>
-                  <p className="text-sm text-slate-600 mt-2 leading-relaxed">{item.desc}</p>
+          <div id="metrics" className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {metricCards.map((card, i) => (
+              <motion.div
+                key={card.label}
+                className="p-8 rounded-2xl bg-white border border-slate-100 shadow-sm min-h-[150px] flex flex-col justify-between"
+                whileHover={{ scale: 1.01 }}
+                transition={{ type: 'spring', stiffness: 280 }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-700">
+                    {card.icon}
+                  </div>
+                  <div>
+                    <p className="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight">{card.value}</p>
+                    <p className="text-sm md:text-base text-slate-600 mt-1 font-semibold">{card.label}</p>
+                  </div>
                 </div>
-              ))}
+                <p className="text-base md:text-lg text-slate-600 mt-4 leading-relaxed">{card.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div id="transformation" className="mt-12">
+            <p className="text-xs uppercase tracking-[0.14em] text-emerald-700 font-semibold mb-6 text-center">Transformation Framework</p>
+
+            <div className="relative mt-4">
+              <div className="absolute left-1/2 top-0 -translate-x-1/2 w-1 h-full bg-gradient-to-b from-emerald-200 via-emerald-400 to-emerald-200 hidden md:block" style={{ boxShadow: '0 0 20px rgba(16, 185, 129, 0.5)' }} />
+
+              <div className="flex flex-col items-center">
+                {deliveryJourney.map((item, idx) => (
+                  <motion.div
+                    key={item.phase}
+                    className="w-full md:w-3/4 flex flex-col md:flex-row items-center mb-10"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.5, delay: idx * 0.08 }}
+                  >
+                    {/* Mobile centered card */}
+                    <div className="md:hidden w-full mb-4">
+                      <div className="p-6 rounded-lg bg-white border border-slate-100 shadow-sm text-center">
+                        <p className="text-sm md:text-base font-bold uppercase tracking-wide text-emerald-700">Phase {item.phase}</p>
+                        <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mt-3">{item.title}</h4>
+                        <p className="text-base md:text-lg text-slate-600 mt-3 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+
+                    {/* Left side (shows on md+) */}
+                    <div className={`hidden md:flex md:w-1/2 ${idx % 2 === 0 ? 'justify-end pr-8' : 'justify-start pr-8'}`}>
+                      {idx % 2 === 0 ? (
+                        <div className="flex items-center gap-4">
+                          <div className="hidden md:block w-40 h-32 rounded-lg overflow-hidden shadow-sm bg-inherit">
+                            <Image src={timelineImages[idx]} alt={`Phase ${item.phase} image`} width={400} height={240} className="w-full h-full object-contain bg-inherit" />
+                          </div>
+                          <div className="p-6 rounded-lg bg-white border border-slate-100 shadow-sm max-w-md text-right">
+                            <p className="text-sm md:text-base font-bold uppercase tracking-wide text-emerald-700">Phase {item.phase}</p>
+                            <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mt-3">{item.title}</h4>
+                            <p className="text-base md:text-lg text-slate-600 mt-3 leading-relaxed">{item.desc}</p>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="w-full" />
+                      )}
+                    </div>
+
+                    {/* Center circle */}
+                    <div className="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full border-2 border-emerald-500 -mx-6" style={{ boxShadow: '0 0 0 4px rgba(16, 185, 129, 0.2), 0 0 15px rgba(16, 185, 129, 0.6)' }}>
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-600 shadow-lg animate-pulse" />
+                    </div>
+
+                    {/* Right side (shows on md+) */}
+                    <div className={`hidden md:flex md:w-1/2 ${idx % 2 === 1 ? 'pl-8 justify-start' : 'pl-8'}`}>
+                      {idx % 2 === 1 ? (
+                        <div className="flex items-center gap-4">
+                          <div className="p-6 rounded-lg bg-white border border-slate-100 shadow-sm max-w-md text-left">
+                            <p className="text-sm md:text-base font-bold uppercase tracking-wide text-emerald-700">Phase {item.phase}</p>
+                            <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mt-3">{item.title}</h4>
+                            <p className="text-base md:text-lg text-slate-600 mt-3 leading-relaxed">{item.desc}</p>
+                          </div>
+                          <div className="hidden md:block w-40 h-32 rounded-lg overflow-hidden shadow-sm bg-inherit">
+                            <Image src={timelineImages[idx]} alt={`Phase ${item.phase} image`} width={400} height={240} className="w-full h-full object-contain bg-inherit" />
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="w-full" />
+                      )}
+                    </div>
+                    </motion.div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-12 bg-gradient-to-b from-white to-slate-100 border-t border-slate-200">
+      <section className="py-12 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-5 text-slate-900">Our Proven IT Solutions</h2>
-          <p className="max-w-3xl mx-auto text-center text-slate-600 mb-16">
-            From engineering execution to ongoing operations, our model is built to deliver measurable business impact.
-          </p>
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Proven IT Solutions</h2>
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-slate-600 mb-6">
+              From engineering execution to ongoing operations, our model is built to deliver measurable business impact.
+            </p>
+            <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-3">
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-slate-700">
+                Enterprise-ready
+              </span>
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-slate-700">
+                Outcome-focused delivery
+              </span>
+              <span className="rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-slate-700">
+                Secure & scalable operations
+              </span>
+            </div>
+          </div>
 
-          <div className="space-y-12 md:space-y-16">
+          <div className="space-y-20 md:space-y-24">
             {[
               {
                 title: "Project Solutions Delivered",
                 img: "/homepageprojectdeleivered1.png",
                 desc: "From startups to Fortune 500 companies, our solutions span industries and technologies, ensuring scalability, performance, and measurable impact.",
+                note: "We align delivery with your business roadmap so every launch is strategic and measurable.",
                 bullets: [
                   "Successfully delivered projects",
                   "Agile methodology for faster execution",
@@ -96,6 +198,7 @@ export default function Stats() {
                 title: "24/7 Global Operations Support",
                 img: "/homepage24:7support.png",
                 desc: "Our dedicated teams monitor, maintain, and optimize systems proactively, reducing downtime and maximizing productivity.",
+                note: "Continuous coverage and proactive optimization keep your operations resilient at scale.",
                 bullets: [
                   "Round-the-clock monitoring",
                   "Agile response mechanisms",
@@ -105,34 +208,23 @@ export default function Stats() {
             ].map((cs, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col md:flex-row items-center gap-10 rounded-3xl border border-slate-200 bg-white p-6 md:p-8 shadow-sm relative overflow-hidden ${
-                  idx % 2 === 1 ? "md:flex-row-reverse" : ""
-                }`}
+                className="grid gap-10 md:grid-cols-[0.95fr_1.05fr] items-center"
               >
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500" />
-                <div className="md:w-1/2 flex justify-center w-full">
-                  <div className={`w-full rounded-[2rem] overflow-hidden relative shadow-none border-none ${idx === 0 ? 'h-80 md:h-[500px]' : 'h-60 md:h-80'}`}>
-                    <Image src={cs.img} alt={cs.title} fill className="object-cover" priority={true} />
-                  </div>
+                <div className={`w-full ${idx % 2 === 1 ? "md:order-2" : ""}`}>
+                  <Image src={cs.img} alt={cs.title} width={1200} height={800} className="w-full h-auto object-contain object-center" priority={true} />
                 </div>
-
-                <div className="md:w-1/2">
-                  <p className="text-xs uppercase tracking-[0.14em] text-emerald-700 font-semibold mb-2">Case Highlight</p>
-                  <h3 className="text-3xl font-semibold text-slate-900 mb-4">{cs.title}</h3>
-                  <p className="text-slate-600 mb-6">{cs.desc}</p>
-                  <div className="space-y-0 pl-8 relative">
+                <div className={`space-y-6 ${idx % 2 === 1 ? "md:order-1" : ""}`}>
+                  <p className="text-sm uppercase tracking-[0.14em] text-emerald-700 font-semibold">Case Highlight</p>
+                  <h3 className="text-3xl md:text-4xl font-semibold text-slate-900">{cs.title}</h3>
+                  <p className="text-base md:text-lg text-slate-600 max-w-2xl">{cs.desc}</p>
+                  <p className="text-base md:text-lg text-slate-700 max-w-2xl">{cs.note}</p>
+                  <ul className="list-disc list-inside space-y-4 text-slate-700 pl-5">
                     {cs.bullets.map((b, i) => (
-                      <div key={i} className="relative pb-8 flex items-start">
-                        {i !== cs.bullets.length - 1 && (
-                          <div className="absolute left-[-20px] top-8 w-0.5 h-8 bg-emerald-400"></div>
-                        )}
-                        <div className="absolute left-[-28px] top-0.5 w-5 h-5 rounded-full bg-emerald-500 border-4 border-white shadow-md flex items-center justify-center flex-shrink-0">
-                          <div className="w-2 h-2 rounded-full bg-white"></div>
-                        </div>
-                        <p className="text-slate-700 text-sm font-medium pt-0.5">{b}</p>
-                      </div>
+                      <li key={i} className="text-base md:text-lg font-medium">
+                        {b}
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
             ))}
@@ -140,9 +232,9 @@ export default function Stats() {
         </div>
       </section>
 
-      <section className="py-12 border-t border-slate-200 bg-gradient-to-b from-slate-100 to-white">
+      <section className="py-12 border-t border-slate-200 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-8 items-center rounded-3xl border border-slate-200 bg-white shadow-sm p-8 md:p-12">
+          <div className="grid lg:grid-cols-2 gap-8 items-center py-8 md:py-12">
             <div>
               <p className="text-sm uppercase tracking-[0.18em] text-emerald-700 font-semibold mb-2">Global Reach</p>
               <h3 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">
@@ -159,8 +251,8 @@ export default function Stats() {
               </p>
             </div>
             <div className="flex justify-center w-full">
-              <div className="w-full md:max-w-4xl h-64 md:h-80 rounded-2xl overflow-hidden">
-                <Image src="/homepageglobalpresence.png" alt="Global presence" fill className="object-cover object-center" />
+              <div className="w-full h-[360px] md:h-[520px] overflow-hidden rounded-[2rem]">
+                <Image src="/homepageglobalpresence.png" alt="Global presence" fill className="object-contain object-center" />
               </div>
             </div>
           </div>
