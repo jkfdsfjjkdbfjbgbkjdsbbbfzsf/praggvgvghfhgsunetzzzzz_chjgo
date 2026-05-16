@@ -236,12 +236,14 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
 
   // Ensure industry grid has enough items to fill layout — synthesize from defaults when needed
   const defaultIndustries = [
-    { name: "Government", description: "Public sector digital transformation and citizen services.", image: "/servicesimages/manufacturing.jpeg" },
-    { name: "Education", description: "Learning platforms and student experience improvements.", image: "/servicesimages/helthcare.jpeg" },
-    { name: "Energy", description: "Operational optimization and grid reliability solutions.", image: "/servicesimages/retail.jpeg" },
-    { name: "Logistics", description: "Supply chain visibility and automation for efficient fulfillment.", image: "/servicesimages/finance.jpeg" },
-    { name: "Telecom", description: "Network modernization and customer experience platforms.", image: "/servicesimages/retail.jpeg" },
-    { name: "Hospitality", description: "Guest experience platforms and operations automation.", image: "/servicesimages/manufacturing.jpeg" },
+    { name: "Government", description: "Public sector digital transformation and citizen services.", image: "/GOVERNMENT.webp" },
+    { name: "Education", description: "Learning platforms and student experience improvements.", image: "/EDUCATION.png" },
+    { name: "Energy & Utilities", description: "Operational optimization and grid reliability solutions.", image: "/ENERGY.webp" },
+    { name: "Logistics", description: "Supply chain visibility and automation for efficient fulfillment.", image: "/Logistics.jpeg" },
+    { name: "Manufacturing", description: "Modernizing operations with automation, predictive analytics, and smart factory solutions.", image: "/MANUFACTURING.webp" },
+    { name: "Healthcare & Life Sciences", description: "Transforming patient outcomes with connected care, data insights, and digital health solutions.", image: "/aiinhealthcare.webp" },
+    { name: "Retail & Consumer Goods", description: "Delivering omnichannel commerce, customer loyalty, and intelligent inventory management.", image: "/RETAIL.webp" },
+    { name: "Financial Services", description: "Modernizing banking, insurance, and payments with secure, compliant digital platforms.", image: "/FINANCE.jpg" },
   ];
 
   const minIndustries = 8;

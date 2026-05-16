@@ -81,7 +81,7 @@ const TechNewsPage = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-screen flex flex-col items-center text-white overflow-hidden">
+      <section className="relative w-full min-h-screen flex flex-col items-center justify-center text-white overflow-hidden pt-24 pb-16">
         {/* Video Background */}
         <video
           autoPlay
@@ -89,87 +89,131 @@ const TechNewsPage = () => {
           muted
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source src="/nwsvideos.mp4" type="video/mp4" />
+          <source src="/newsherovideo.mp4" type="video/mp4" />
         </video>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Overlay with gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
 
-        {/* Headline */}
-        <motion.h1
-          className="relative z-10 text-5xl md:text-7xl font-extrabold leading-tight text-center mt-20"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Prasunet Digital Intelligence
-        </motion.h1>
+        {/* Decorative elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute -bottom-32 left-10 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: "2s" }}></div>
 
-        {/* Description */}
-        <motion.p
-          className="absolute bottom-12 z-10 text-lg md:text-2xl max-w-3xl mx-auto text-center px-3"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2 }}
-        >
-          Stay ahead with breaking stories, expert insights, and the latest
-          innovations shaping the future of technology.
-        </motion.p>
+        <div className="relative z-10 w-full max-w-6xl px-6 mx-auto">
+          {/* Badge */}
+          <motion.div
+            className="flex justify-center mb-6"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/50 text-blue-300 text-sm font-semibold backdrop-blur">
+               Real-Time Tech & Innovation Updates
+            </span>
+          </motion.div>
+
+          {/* Main Headline */}
+          <motion.h1
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight text-center mb-6"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.1 }}
+          >
+            PRASUNET
+            <span className="block bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
+              Digital Intelligence
+            </span>
+          </motion.h1>
+
+          {/* Tagline */}
+          <motion.p
+            className="text-lg md:text-xl text-slate-200 text-center mb-12 max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            Stay ahead with breaking stories, expert insights, and the latest innovations shaping the future of technology, AI, and digital transformation.
+          </motion.p>
+
+          {/* CTA Button */}
+          <motion.div
+            className="flex justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            <button className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-cyan-600 transition transform hover:scale-105">
+              Explore Latest News
+            </button>
+          </motion.div>
+        </div>
       </section>
 
       {/* FEATURED BREAKING NEWS */}
-    <section className="relative bg-gradient-to-r from-slate-700 via-slate-600 to-blue-700 text-white py-16 overflow-hidden">
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative bg-gradient-to-r from-slate-700 via-slate-600 to-blue-700 text-white py-16 overflow-hidden">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/20"></div>
 
-      <div className="relative container mx-auto px-6 text-center">
-        {/* Headline */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12 tracking-wide">
-          Featured Breaking News
-        </h2>
+        <div className="relative container mx-auto px-6 max-w-6xl">
+          {/* Headline */}
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-12 tracking-wide text-center">
+            Featured Breaking News
+          </h2>
 
-        {/* Swiper Slider */}
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          loop={true}
-          spaceBetween={30}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            1024: { slidesPerView: 2 },
-          }}
-        >
-          {newsItems.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white/10 rounded-2xl shadow-md overflow-hidden hover:bg-white/20 transition flex flex-col md:flex-row items-center">
-                {/* Image */}
-                <div className="md:w-1/2 w-full h-48 md:h-auto">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
+          {/* Swiper Slider */}
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            loop={true}
+            spaceBetween={30}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              1024: { slidesPerView: 2 },
+            }}
+          >
+            {newsItems.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden hover:bg-white/20 transition border border-white/10">
+                  <div className="flex flex-col md:flex-row h-full min-h-[280px]">
+                    {/* Image */}
+                    <div className="w-full md:w-1/2 h-48 md:h-auto relative overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* Text Content */}
+                    <div className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-8">
+                      <h3 className="text-xl md:text-2xl font-bold mb-3 line-clamp-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-100 text-sm md:text-base leading-relaxed line-clamp-3">
+                        {item.description}
+                      </p>
+                      <div className="mt-6">
+                        <button className="px-6 py-2 rounded-full bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm transition transform hover:scale-105">
+                          Read More
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-                {/* Text Content */}
-                <div className="md:w-1/2 w-full p-6 text-left">
-                  <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                  <p className="text-gray-200 text-base">{item.description}</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        {/* CTA */}
-        <div className="mt-12">
-          <button className="px-8 py-3 rounded-full bg-blue-400 text-gray-900 font-semibold shadow-md hover:bg-blue-300 transition">
-            Read Full Coverage →
-          </button>
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <button className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 text-gray-900 font-semibold shadow-lg hover:shadow-xl transition transform hover:scale-105">
+              Read Full Coverage →
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
       {/* LATEST NEWS */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">

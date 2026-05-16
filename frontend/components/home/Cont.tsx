@@ -59,7 +59,7 @@ const ContactForm = () => {
           <div className="space-y-2 mb-4">
             <div className="flex items-center justify-center lg:justify-start gap-2 text-slate-700">
               <Mail className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span className="text-sm">contact@prasunet.com</span>
+              <span className="text-sm">info@prasunet.in / prasunetcompany@gmail.com</span>
             </div>
             <div className="flex items-center justify-center lg:justify-start gap-2 text-slate-700">
               <Phone className="w-4 h-4 text-emerald-600 shrink-0" />

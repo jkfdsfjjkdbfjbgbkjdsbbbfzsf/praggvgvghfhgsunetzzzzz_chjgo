@@ -198,4 +198,28 @@ export const services: ServiceItem[] = [
     description: "Boost your online presence with SEO, content marketing, PPC, and social media strategies.",
     href: "/service/digitalmarketing",
   },
+  {
+    title: "Government Solutions",
+    image: "/GOVERNMENT.webp",
+    description: "Digital transformation for government agencies, e-governance, public sector solutions, and compliance.",
+    href: "/service/government",
+  },
+  {
+    title: "Education Technology",
+    image: "/EDUCATION.png",
+    description: "EdTech solutions, LMS development, remote learning platforms, and digital classrooms.",
+    href: "/service/education",
+  },
+  {
+    title: "Energy & Utilities",
+    image: "/ENERGY.webp",
+    description: "Energy sector solutions, smart grids, IoT for utilities, and sustainability analytics.",
+    href: "/service/energy",
+  },
+  {
+    title: "Logistics & Supply Chain",
+    image: "/Logistics.jpeg",
+    description: "Logistics optimization, supply chain visibility, tracking systems, and warehouse automation.",
+    href: "/service/logistics",
+  },
 ];

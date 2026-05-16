@@ -1,37 +1,65 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Industries = () => {
-  const industries = [
-    { name: "Hi-Tech", desc: "Accelerating digital product innovation with cloud-native and AI-enabled engineering." },
-    { name: "Travel, Transportation, Logistics & Hospitality", desc: "Optimizing journeys, supply chains, and guest experiences through integrated digital platforms." },
-    { name: "Manufacturing", desc: "Modernizing operations with automation, predictive analytics, and smart factory capabilities." },
-    { name: "Media & Entertainment", desc: "Building scalable content platforms and personalized digital engagement ecosystems." },
-    { name: "Private Equity", desc: "Supporting portfolio transformation with technology due diligence and value-creation programs." },
-    { name: "Professional Services", desc: "Driving efficiency and service excellence through workflow digitization and data intelligence." },
-    { name: "Insurance", desc: "Enhancing underwriting, claims, and risk operations through AI-powered decision systems." },
-    { name: "Retail & Consumer Goods", desc: "Delivering omnichannel commerce and demand forecasting for customer-centric growth." },
-    { name: "Banking & Financial Services", desc: "Modernizing core systems and digital channels with secure, compliant architecture." },
-    { name: "Communications", desc: "Improving network operations and customer lifecycle management with scalable platforms." },
-    { name: "Energy & Utilities", desc: "Enabling resilient and sustainable operations through intelligent grid and asset solutions." },
-    { name: "Healthcare & Life Sciences", desc: "Transforming patient outcomes with secure clinical systems and data-driven care models." },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const industries = [
+    {
+      name: "Government",
+      desc: "Public sector digital transformation and citizen services.",
+      image: "/GOVERNMENT.webp",
+    },
+    {
+      name: "Education",
+      desc: "Learning platforms and student experience improvements.",
+      image: "/EDUCATION.png",
+    },
+    {
+      name: "Energy & Utilities",
+      desc: "Enabling resilient and sustainable operations through intelligent grid and asset solutions.",
+      image: "/ENERGY.webp",
+    },
+    {
+      name: "Logistics & Supply Chain",
+      desc: "Supply chain visibility and automation for efficient fulfillment.",
+      image: "/Logistics.jpeg",
+    },
+    {
+      name: "Manufacturing",
+      desc: "Modernizing operations with automation, predictive analytics, and smart factory solutions.",
+      image: "/MANUFACTURING.webp",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Transforming patient outcomes with connected care, data insights, and digital health solutions.",
+      image: "/aiinhealthcare.webp",
+    },
+    {
+      name: "Retail & Consumer Goods",
+      desc: "Delivering omnichannel commerce, customer loyalty, and intelligent inventory management.",
+      image: "/RETAIL.webp",
+    },
+    {
+      name: "Financial Services",
+      desc: "Modernizing banking, insurance, and payments with secure, compliant digital platforms.",
+      image: "/FINANCE.jpg",
+    },
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % industries.length);
-    }, 1200);
+    }, 2000);
+
     return () => clearInterval(interval);
   }, [industries.length]);
 
-  const getVisibleIndustries = () => {
-    return Array.from({ length: 3 }, (_, i) => industries[(currentIndex + i) % industries.length]);
-  };
+  const visibleIndustries = Array.from({ length: 4 }, (_, idx) => industries[(currentIndex + idx) % industries.length]);
 
   return (
     <section
@@ -68,19 +96,26 @@ const Industries = () => {
         digital transformation outcomes.
       </motion.p>
 
-      <div className="relative w-full max-w-xs md:max-w-6xl grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-6">
-        <AnimatePresence mode="popLayout">
-          {getVisibleIndustries().map((industry, index) => (
-            <motion.div
-              key={industry.name}
-              className={`flex flex-col p-7 rounded-2xl border shadow-sm bg-white transition transform hover:-translate-y-1 hover:shadow-lg ${
-                index === 1 ? "border-emerald-200" : "border-slate-200"
-              }`}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.45 }}
-            >
+      <div className="relative w-full max-w-xs md:max-w-6xl grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-6">
+        {visibleIndustries.map((industry, index) => (
+          <motion.div
+            key={`${industry.name}-${index}`}
+            className={`flex flex-col overflow-hidden rounded-2xl border shadow-sm bg-white transition transform hover:-translate-y-1 hover:shadow-lg ${
+              index === 1 ? "border-emerald-200" : "border-slate-200"
+            }`}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: index * 0.05 }}
+          >
+            <div className="relative h-48 w-full overflow-hidden">
+              <Image
+                src={industry.image}
+                alt={industry.name}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col p-7">
               <span className="inline-flex w-fit text-xs uppercase tracking-wider font-semibold bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full mb-3">
                 Sector
               </span>
@@ -90,9 +125,9 @@ const Industries = () => {
               <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 {industry.desc}
               </p>
-            </motion.div>
-          ))}
-        </AnimatePresence>
+            </div>
+          </motion.div>
+        ))}
       </div>
 
       <div className="mt-12">

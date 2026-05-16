@@ -9,7 +9,7 @@ const CareerSection = () => {
   const router = useRouter();
 
   return (
-    <section className="relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-b from-slate-100 via-white to-slate-50 px-6 md:px-16 py-14 md:py-16 rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+    <section className="relative w-full flex flex-col md:flex-row items-center justify-between bg-white px-6 md:px-16 py-14 md:py-16 rounded-3xl overflow-hidden shadow-xl border border-slate-200">
       <div className="absolute top-[-100px] right-[-120px] w-[280px] h-[280px] bg-emerald-300 rounded-full opacity-10 blur-3xl z-0"></div>
       <div className="absolute bottom-[-80px] left-[-80px] w-[240px] h-[240px] bg-indigo-300 rounded-full opacity-10 blur-3xl z-0"></div>
 
@@ -64,7 +64,7 @@ const CareerSection = () => {
             src="/CAREERHOMEIMG.png"
             alt="Career at PRASUNET"
             fill
-            className="object-cover"
+            className="object-contain object-center"
           />
         </div>
       </div>
