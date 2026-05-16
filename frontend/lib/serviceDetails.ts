@@ -81,22 +81,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -108,7 +108,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved developer velocity with automation.",
           "Delivered faster time-to-market for new features.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Agile delivery acceleration for Software Development",
@@ -118,7 +118,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved deployment predictability.",
           "Enabled easier long-term evolution.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Scalable architecture launch for Software Development",
@@ -128,7 +128,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced infrastructure risk.",
           "Improved operational visibility.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Business velocity improvement for Software Development",
@@ -138,7 +138,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Aligned engineering with product goals.",
           "Scaled delivery across teams with confidence.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with Software Development?",
@@ -205,22 +205,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -232,7 +232,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Aligned IT priorities with business goals.",
           "Improved executive decision-making.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "IT governance and operating model for IT Consulting & Strategy",
@@ -242,7 +242,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced project ambiguity through structure.",
           "Increased stakeholder alignment.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Technology decision framework for IT Consulting & Strategy",
@@ -252,7 +252,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced risk on strategic bets.",
           "Accelerated delivery with clear criteria.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Change readiness program for IT Consulting & Strategy",
@@ -262,7 +262,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved adoption across teams.",
           "Reduced disruption during transformation.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with IT Consulting & Strategy?",
@@ -329,22 +329,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -356,7 +356,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced checkout friction.",
           "Boosted conversion through personalization.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Checkout conversion lift for E-commerce Solutions",
@@ -366,7 +366,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Optimized product discovery.",
           "Increased AOV through smarter merchandising.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Marketplace integration for E-commerce Solutions",
@@ -376,7 +376,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved partner onboarding.",
           "Enabled real-time commerce flows.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Personalized commerce experience for E-commerce Solutions",
@@ -386,7 +386,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved repeat purchase rates.",
           "Strengthened loyalty through experience.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with E-commerce Solutions?",
@@ -452,22 +452,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -479,7 +479,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced incident response time.",
           "Improved user satisfaction through faster service.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Service automation for IT Support & Maintenance",
@@ -489,7 +489,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved ticket routing and escalation.",
           "Freed teams for higher-value work.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Infrastructure reliability for IT Support & Maintenance",
@@ -499,7 +499,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced service interruptions.",
           "Standardized operational processes.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Support experience improvement for IT Support & Maintenance",
@@ -509,7 +509,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved transparency into issues.",
           "Reduced escalation volumes.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with IT Support & Maintenance?",
@@ -575,22 +575,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -698,22 +698,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -725,7 +725,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced infrastructure complexity.",
           "Improved resilience and availability.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Infrastructure automation for Cloud Services",
@@ -735,7 +735,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced manual toil with infrastructure-as-code.",
           "Improved deployment confidence.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Resilience and scalability for Cloud Services",
@@ -745,7 +745,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved failover and recovery.",
           "Reduced service disruptions.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "FinOps optimization for Cloud Services",
@@ -755,7 +755,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Optimized spend without sacrificing performance.",
           "Improved visibility into usage.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with Cloud Services?",
@@ -822,22 +822,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -945,22 +945,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -972,7 +972,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved performance across locations.",
           "Reduced network management overhead.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Performance and reliability for Networking & Infrastructure",
@@ -982,7 +982,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved network availability.",
           "Reduced latency for critical apps.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Edge connectivity for Networking & Infrastructure",
@@ -992,7 +992,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved access for remote users.",
           "Enabled fast location-to-location traffic.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Network security and visibility for Networking & Infrastructure",
@@ -1002,7 +1002,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Strengthened security at the perimeter.",
           "Reduced troubleshooting time.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Networking & Infrastructure?",
@@ -1069,22 +1069,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1096,7 +1096,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Connected disparate systems reliably.",
           "Improved data synchronization across apps.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Legacy systems connected for Custom Software Integration",
@@ -1106,7 +1106,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced brittle custom code.",
           "Enabled easier maintenance.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Workflow automation for Custom Software Integration",
@@ -1116,7 +1116,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced manual handoffs.",
           "Improved process accuracy.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Data orchestration for Custom Software Integration",
@@ -1126,7 +1126,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved end-to-end visibility.",
           "Reduced delays in cross-system processes.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Custom Software Integration?",
@@ -1192,22 +1192,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1219,7 +1219,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved navigation and interaction flow.",
           "Increased user satisfaction.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Rapid prototyping for UI/UX Design & Prototyping",
@@ -1229,7 +1229,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced redesign cycles.",
           "Aligned stakeholders around the right experience.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Conversion-focused interface for UI/UX Design & Prototyping",
@@ -1239,7 +1239,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved clarity in calls to action.",
           "Reduced user confusion.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Design system delivery for UI/UX Design & Prototyping",
@@ -1249,7 +1249,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved consistency across screens.",
           "Enabled faster product updates.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with UI/UX Design & Prototyping?",
@@ -1315,22 +1315,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1342,7 +1342,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved onboarding for new customers.",
           "Delivered a scalable subscription model.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Subscription growth engine for SaaS Development",
@@ -1352,7 +1352,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved retention with better engagement.",
           "Enabled recurring value delivery.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Multi-tenant architecture for SaaS Development",
@@ -1362,7 +1362,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved security for shared environments.",
           "Enabled easier tenant onboarding.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Service operations automation for SaaS Development",
@@ -1372,7 +1372,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced manual management.",
           "Improved service stability.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with SaaS Development?",
@@ -1438,22 +1438,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1465,7 +1465,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved partner onboarding.",
           "Reduced integration friction.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Developer experience for API Development & Integration",
@@ -1475,7 +1475,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Increased developer adoption.",
           "Reduced support overhead.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Secure API lifecycle for API Development & Integration",
@@ -1485,7 +1485,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved access control and monitoring.",
           "Reduced integration risk.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Integrated service ecosystem for API Development & Integration",
@@ -1495,7 +1495,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved data flow across services.",
           "Enabled new partner ecosystems.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with API Development & Integration?",
@@ -1562,22 +1562,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1685,22 +1685,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1712,7 +1712,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved sensor data capture.",
           "Enabled actionable operational insights.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Sensor data orchestration for Internet of Things (IoT)",
@@ -1722,7 +1722,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved automation in the field.",
           "Reduced manual monitoring.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Predictive operations for Internet of Things (IoT)",
@@ -1732,7 +1732,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved equipment uptime.",
           "Reduced service disruption.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Connected product experiences for Internet of Things (IoT)",
@@ -1742,7 +1742,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved real-time visibility.",
           "Enabled smarter operations.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Internet of Things (IoT)?",
@@ -1808,22 +1808,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1835,7 +1835,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved data consistency across business functions.",
           "Reduced system complexity.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "CRM transformation for ERP & CRM Solutions",
@@ -1845,7 +1845,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved sales and service workflows.",
           "Enabled richer customer insights.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Unified operations for ERP & CRM Solutions",
@@ -1855,7 +1855,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved collaboration across teams.",
           "Reduced duplicated effort.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Customer data harmonization for ERP & CRM Solutions",
@@ -1865,7 +1865,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved visibility into customer history.",
           "Enabled a single source of truth.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with ERP & CRM Solutions?",
@@ -1931,22 +1931,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -1958,7 +1958,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved trust across partners.",
           "Enabled secure transactions.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Smart contracts for Blockchain & Web3 Solutions",
@@ -1968,7 +1968,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced manual reconciliation.",
           "Improved settlement accuracy.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Trusted transaction network for Blockchain & Web3 Solutions",
@@ -1978,7 +1978,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved transaction transparency.",
           "Enabled audit-ready records.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Digital asset platform for Blockchain & Web3 Solutions",
@@ -1988,7 +1988,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved partner confidence.",
           "Reduced reconciliation overhead.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Blockchain & Web3 Solutions?",
@@ -2054,22 +2054,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2081,7 +2081,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved deployment reliability.",
           "Reduced manual release effort.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Release automation for DevOps & Automation Services",
@@ -2091,7 +2091,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved consistency across stages.",
           "Reduced setup time.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Infrastructure as code for DevOps & Automation Services",
@@ -2101,7 +2101,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved change traceability.",
           "Reduced configuration drift.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Operational maturity for DevOps & Automation Services",
@@ -2111,7 +2111,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved incident handling.",
           "Reduced outages.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with DevOps & Automation Services?",
@@ -2178,22 +2178,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2205,7 +2205,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved app store engagement.",
           "Delivered faster release cycles.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "App performance optimization for Mobile App Development",
@@ -2215,7 +2215,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced load times.",
           "Improved user engagement.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Connected mobile journey for Mobile App Development",
@@ -2225,7 +2225,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved data sync across devices.",
           "Enabled seamless user journeys.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Engagement growth for Mobile App Development",
@@ -2235,7 +2235,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved mobile onboarding.",
           "Delivered measurable growth.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with Mobile App Development?",
@@ -2301,22 +2301,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2328,7 +2328,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved web performance and accessibility.",
           "Reduced bounce rates.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Performance and accessibility for Web Development & Design",
@@ -2338,7 +2338,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved content flexibility.",
           "Enabled faster updates.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Headless web experience for Web Development & Design",
@@ -2348,7 +2348,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved page speed and reliability.",
           "Enhanced user interactions.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Conversion-oriented web design for Web Development & Design",
@@ -2358,7 +2358,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved mobile responsiveness.",
           "Reduced design debt.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with Web Development & Design?",
@@ -2425,22 +2425,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2452,7 +2452,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved engagement with interactive content.",
           "Delivered a memorable user journey.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "VR training solution for VR/AR Solutions",
@@ -2462,7 +2462,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved learning retention.",
           "Enabled experiential training.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "AR engagement platform for VR/AR Solutions",
@@ -2472,7 +2472,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved real-world interaction.",
           "Delivered context-aware experiences.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Mixed reality showcase for VR/AR Solutions",
@@ -2482,7 +2482,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved immersion and storytelling.",
           "Enabled richer visualization.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with VR/AR Solutions?",
@@ -2548,22 +2548,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2575,7 +2575,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved cross-team execution.",
           "Reduced project risk.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Delivery coordination for IT Project Management",
@@ -2585,7 +2585,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved timeline visibility.",
           "Aligned stakeholders to outcomes.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Portfolio acceleration for IT Project Management",
@@ -2595,7 +2595,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved resource allocation.",
           "Increased on-time delivery.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Execution discipline for IT Project Management",
@@ -2605,7 +2605,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced bottlenecks.",
           "Improved predictability.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with IT Project Management?",
@@ -2672,22 +2672,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2699,7 +2699,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced manual processing.",
           "Improved throughput.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Process automation for Robotic Process Automation (RPA)",
@@ -2709,7 +2709,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved process reliability.",
           "Reduced human error.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Bot orchestration for Robotic Process Automation (RPA)",
@@ -2719,7 +2719,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Enhanced automation coverage.",
           "Improved visibility.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Manual work elimination for Robotic Process Automation (RPA)",
@@ -2729,7 +2729,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved speed of execution.",
           "Increased process consistency.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Robotic Process Automation (RPA)?",
@@ -2795,22 +2795,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2822,7 +2822,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved team skill levels.",
           "Increased knowledge retention.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Learning program for IT Training & Skill Development",
@@ -2832,7 +2832,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved engagement with practical content.",
           "Enabled better performance.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Skills adoption for IT Training & Skill Development",
@@ -2842,7 +2842,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved adoption of new practices.",
           "Reduced knowledge gaps.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Training transformation for IT Training & Skill Development",
@@ -2852,7 +2852,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved training effectiveness.",
           "Increased confidence.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with IT Training & Skill Development?",
@@ -2918,22 +2918,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -2945,7 +2945,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved player engagement.",
           "Delivered cross-platform experiences.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Experience production for Game Development",
@@ -2955,7 +2955,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved retention with compelling content.",
           "Enabled play across devices.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Cross-platform publishing for Game Development",
@@ -2965,7 +2965,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Optimized performance for players.",
           "Improved launch readiness.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Engagement analytics for Game Development",
@@ -2975,7 +2975,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved player feedback loops.",
           "Enabled ongoing improvement.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with Game Development?",
@@ -3041,22 +3041,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3164,22 +3164,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3191,7 +3191,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved operational consistency.",
           "Delivered proactive monitoring.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Proactive operations for Managed IT Services",
@@ -3201,7 +3201,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced support friction.",
           "Increased responsiveness.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Workplace experience improvement for Managed IT Services",
@@ -3211,7 +3211,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved SLAs.",
           "Reduced downtime.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Service level consistency for Managed IT Services",
@@ -3221,7 +3221,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved reliability.",
           "Simplified management.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Managed IT Services?",
@@ -3287,22 +3287,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3314,7 +3314,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved testing reliability.",
           "Reduced release risk.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Test automation for Quality Assurance & Testing Services",
@@ -3324,7 +3324,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved feedback loops.",
           "Increased execution speed.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Release confidence for Quality Assurance & Testing Services",
@@ -3334,7 +3334,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced defects in production.",
           "Improved regression coverage.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Defect reduction for Quality Assurance & Testing Services",
@@ -3344,7 +3344,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved release readiness.",
           "Enhanced quality visibility.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Quality Assurance & Testing Services?",
@@ -3410,22 +3410,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3437,7 +3437,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced technical debt.",
           "Improved stability.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Technical debt reduction for Legacy System Modernization",
@@ -3447,7 +3447,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Lowered maintenance effort.",
           "Enabled new capabilities.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Replatforming for Legacy System Modernization",
@@ -3457,7 +3457,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced support costs.",
           "Enhanced performance.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       },
       {
         "title": "Stability and transition for Legacy System Modernization",
@@ -3467,7 +3467,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Reduced migration risk.",
           "Improved operational readiness.",
         ],
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with Legacy System Modernization?",
@@ -3533,22 +3533,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3657,22 +3657,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3780,22 +3780,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3807,7 +3807,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved device connectivity.",
           "Delivered real-time control.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Connected device software for Embedded Systems",
@@ -3817,7 +3817,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved reliability at the edge.",
           "Enabled smoother updates.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Edge integration for Embedded Systems",
@@ -3827,7 +3827,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved data flow.",
           "Reduced maintenance cycles.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "title": "Real-time embedded experiences for Embedded Systems",
@@ -3837,7 +3837,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved operational visibility.",
           "Enhanced user experience.",
         ],
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       }
     ],
     "ctaHeading": "Ready to accelerate with Embedded Systems?",
@@ -3903,22 +3903,22 @@ export const serviceDetails: Record<string, ServiceDetail> =
       {
         "name": "Finance",
         "description": "Secure, compliant technology for financial services and payments.",
-        "image": "/servicesimages/finance.jpeg"
+        "image": "/FINANCE.jpg"
       },
       {
         "name": "Healthcare",
         "description": "Digital solutions that improve care delivery, compliance, and efficiency.",
-        "image": "/servicesimages/helthcare.jpeg"
+        "image": "/healthcare.jpg"
       },
       {
         "name": "Retail",
         "description": "Experience-driven commerce and operations for modern retail brands.",
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "name": "Manufacturing",
         "description": "Connected systems and analytics that optimize manufacturing performance.",
-        "image": "/servicesimages/manufacturing.jpeg"
+        "image": "/MANUFACTURING.webp"
       }
     ],
     "caseStudies": [
@@ -3930,7 +3930,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved audience reach.",
           "Increased engagement.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Marketing automation for Digital Marketing & SEO Services",
@@ -3940,7 +3940,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved campaign ROI.",
           "Enabled smarter targeting.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Audience growth for Digital Marketing & SEO Services",
@@ -3950,7 +3950,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved conversion performance.",
           "Reduced acquisition costs.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       },
       {
         "title": "Brand experience optimization for Digital Marketing & SEO Services",
@@ -3960,7 +3960,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
           "Improved creative consistency.",
           "Enhanced campaign execution.",
         ],
-        "image": "/servicesimages/retail.jpeg"
+        "image": "/RETAIL.webp"
       }
     ],
     "ctaHeading": "Ready to accelerate with Digital Marketing & SEO Services?",

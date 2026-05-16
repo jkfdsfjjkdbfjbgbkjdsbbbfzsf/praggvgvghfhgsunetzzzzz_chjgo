@@ -70,7 +70,7 @@ const CareerSection = () => {
           transition={{ duration: 10, ease: "easeInOut", repeat: Infinity }}
         >
           <Image
-            src="/careerpage.png"
+            src="/CAREERHOMEIMG.png"
             alt="Career at PRASUNET"
             fill
             className="object-cover"
