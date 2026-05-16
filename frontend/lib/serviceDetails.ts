@@ -73,7 +73,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -197,7 +197,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -321,7 +321,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -444,7 +444,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -567,7 +567,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -690,7 +690,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -814,7 +814,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -937,7 +937,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1061,7 +1061,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1184,7 +1184,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1307,7 +1307,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1430,7 +1430,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1554,7 +1554,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1677,7 +1677,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1800,7 +1800,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -1923,7 +1923,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2046,7 +2046,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2170,7 +2170,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2293,7 +2293,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2417,7 +2417,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2540,7 +2540,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2664,7 +2664,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2787,7 +2787,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -2910,7 +2910,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3033,7 +3033,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3156,7 +3156,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3279,7 +3279,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3402,7 +3402,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3525,7 +3525,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3649,7 +3649,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3772,7 +3772,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],
@@ -3895,7 +3895,7 @@ export const serviceDetails: Record<string, ServiceDetail> =
         "label": "Operational coverage"
       },
       {
-        "value": "98%",
+        "value": "100%",
         "label": "Customer satisfaction"
       }
     ],

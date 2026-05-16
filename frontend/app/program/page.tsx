@@ -381,29 +381,7 @@ export default function ProgramPage() {
     </div>
 
     {/* Stats Section */}
-    <motion.div 
-      className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 p-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="text-center">
-        <div className="text-4xl font-bold mb-2">10K+</div>
-        <p className="text-blue-100">Students Enrolled</p>
-      </div>
-      <div className="text-center">
-        <div className="text-4xl font-bold mb-2">50+</div>
-        <p className="text-blue-100">Partner Companies</p>
-      </div>
-      <div className="text-center">
-        <div className="text-4xl font-bold mb-2">95%</div>
-        <p className="text-blue-100">Success Rate</p>
-      </div>
-      <div className="text-center">
-        <div className="text-4xl font-bold mb-2">25+</div>
-        <p className="text-blue-100">Countries Reached</p>
-      </div>
-    </motion.div>
+    
   </div>
 </div>
      {/* Innovation Stories 
