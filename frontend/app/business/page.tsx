@@ -91,55 +91,55 @@ export default function BusinessPage() {
       company: 'Global Financial Corporation',
       challenge: 'Digital Banking Transformation',
       result: '40% operational efficiency improvement',
-      icon: '🏦'
+      image: '/Global Financial Corporation.jpg'
     },
     {
       company: 'Leading E-commerce Platform',
       challenge: 'Scalable Cloud Infrastructure',
       result: '99.9% uptime achieved',
-      icon: '🛒'
+      image: '/Leading E-commerce Platform.jpeg'
     },
     {
       company: 'Healthcare Provider Network',
       challenge: 'Data Security & Compliance',
       result: 'HIPAA & ISO 27001 certified',
-      icon: '🏥'
+      image: '/Healthcare Provider Network.jpg'
     },
     {
       company: 'Manufacturing Giant',
       challenge: 'IoT & Industry 4.0',
       result: '35% production increase',
-      icon: '🏭'
+      image: '/Manufacturing Giant .webp'
     },
     {
       company: 'Global Logistics Leader',
       challenge: 'Supply Chain Visibility',
       result: '25% faster delivery cycles',
-      icon: '🚚'
+      image: '/Global Logistics Leader.jpeg'
     },
     {
       company: 'Energy Services Group',
       challenge: 'Smart Grid Modernization',
       result: '18% reduction in operating costs',
-      icon: '⚡'
+      image: '/Energy Services Group.jpg'
     },
     {
       company: 'Public Sector Agency',
       challenge: 'Digital Citizen Services',
       result: '2x increase in online engagement',
-      icon: '🏛️'
+      image: '/Public Sector Agency.jpg'
     },
     {
       company: 'Retail Chain Network',
       challenge: 'Omnichannel Customer Experience',
       result: '22% uplift in customer retention',
-      icon: '🛍️'
+      image: '/Retail Chain Network.webp'
     },
     {
       company: 'Global Technology Manufacturer',
       challenge: 'Enterprise Systems Integration',
       result: '30% faster product launch cycles',
-      icon: '🧩'
+      image: '/Global Technology Manufacturer.jpg'
     }
   ];
 
@@ -287,22 +287,20 @@ export default function BusinessPage() {
               <div key={index} className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl shadow-slate-200/40 transition hover:-translate-y-1">
                 <div className="relative h-56 overflow-hidden">
                   <Image
-                    src={`/${index % 2 === 0 ? 'GOVERNMENT.webp' : index === 1 ? 'EDUCATION.png' : index === 2 ? 'ENERGY.webp' : 'Logistics.jpeg'}`}
+                    src={caseStudy.image}
                     alt={caseStudy.company}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 right-4 bg-cyan-600 text-white rounded-full px-3 py-1 text-sm font-semibold shadow-lg max-w-[70%] truncate">
+                    {caseStudy.result}
+                  </div>
                 </div>
                 <div className="p-8">
-                  <div className="flex items-center gap-3 text-3xl">{caseStudy.icon}</div>
-                  <h3 className="mt-6 text-2xl font-semibold text-slate-900">{caseStudy.company}</h3>
+                  <h3 className="text-2xl font-semibold text-slate-900">{caseStudy.company}</h3>
                   <p className="mt-3 text-slate-600 leading-relaxed">{caseStudy.challenge}</p>
-                  <div className="mt-6 rounded-3xl bg-slate-50 p-5 border border-slate-200 text-slate-900">
-                    <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Result</p>
-                    <p className="mt-3 text-lg font-semibold">{caseStudy.result}</p>
-                  </div>
                 </div>
               </div>
             ))}

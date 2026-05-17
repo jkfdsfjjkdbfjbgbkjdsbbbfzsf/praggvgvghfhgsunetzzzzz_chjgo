@@ -81,6 +81,27 @@ const heroThemeMap: Record<string, string> = {
   embedded: "immersive",
 };
 
+const caseStudyImages = [
+  "/casestudy1.jpg",
+  "/casestudy2.png",
+  "/casestudy3.png",
+  "/casestudy4.jpg",
+  "/casestudy5.webp",
+  "/casestudy6.webp",
+  "/casestudy7.jpeg",
+  "/casestudy8.jpg",
+  "/casestudy9.jpg",
+  "/casestudy10.jpg",
+  "/casestudy11.jpg",
+  "/casestudy12.jpg",
+  "/casestudy13.jpg",
+];
+
+const getCaseStudyImagesForService = (serviceKey: string) => {
+  const startIndex = getDeterministicIndex(serviceKey, caseStudyImages.length);
+  return caseStudyImages.map((_, index) => caseStudyImages[(startIndex + index) % caseStudyImages.length]);
+};
+
 const heroThemes: Record<string, Record<string, string>> = {
   media: {
     sectionClass: "bg-slate-950",
@@ -233,6 +254,12 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
   const selectedSecondaryVideo = service.secondaryVideo ?? availableSecondaryVideos[
     getDeterministicIndex(service.slug + service.title, availableSecondaryVideos.length)
   ];
+
+  const serviceCaseStudyImages = getCaseStudyImagesForService(service.slug);
+  const displayedCaseStudies = service.caseStudies.map((caseStudy, index) => ({
+    ...caseStudy,
+    image: serviceCaseStudyImages[index % serviceCaseStudyImages.length],
+  }));
 
   // Ensure industry grid has enough items to fill layout — synthesize from defaults when needed
   const defaultIndustries = [
@@ -482,7 +509,7 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
             </Link>
           </div>
 
-          <CaseStudyCarousel caseStudies={service.caseStudies} serviceTitle={service.title} />
+          <CaseStudyCarousel caseStudies={displayedCaseStudies} serviceTitle={service.title} />
         </div>
       </section>
 
