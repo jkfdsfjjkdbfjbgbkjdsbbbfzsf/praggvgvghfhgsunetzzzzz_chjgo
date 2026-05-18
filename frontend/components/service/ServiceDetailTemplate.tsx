@@ -340,21 +340,12 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
               <p className={`max-w-2xl text-sm ${heroTheme.introClass}`}>
                 {service.heroSubtext}
               </p>
-
-              <div className="grid gap-4 sm:grid-cols-2">
-                {service.bullets.map((item) => (
-                  <div key={item} className={`rounded-3xl border p-6 shadow-sm ${heroTheme.cardClass}`}>
-                    <p className={`text-sm font-semibold ${heroTheme.titleClass}`}>{item}</p>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="relative">
-              <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-transparent to-transparent">
-                <div className="h-full w-full min-h-[220px] md:min-h-[300px] lg:min-h-[360px]" />
+              <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-transparent to-transparent min-h-[280px] md:min-h-[360px]">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
-                <div className="relative md:absolute md:inset-6 md:flex md:items-start">
+                <div className="relative mx-4 my-6 md:absolute md:inset-6 md:flex md:items-start">
                   <div className="rounded-3xl bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 w-full md:max-h-[65vh] md:overflow-auto">
                     <p className="text-xs uppercase tracking-[0.24em] text-emerald-300">Key outcomes</p>
                     <div className="mt-3 grid gap-3">
