@@ -392,10 +392,9 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
                   poster={service.heroImage}
                 />
                 <div className="p-8 bg-slate-950">
-                  <p className="text-sm uppercase tracking-[0.24em] text-emerald-300">Visual story</p>
-                  <h3 className="mt-4 text-2xl font-semibold text-white">Dynamic outcomes in motion</h3>
+                  <h3 className="text-2xl font-semibold text-white">{service.title} in motion</h3>
                   <p className="mt-3 text-slate-300 leading-7">
-                    Experience how our delivery model combines real-world expertise, automation, and design to make your technology strategy come alive.
+                    See how our delivery model combines real-world expertise, automation, and design to make {service.title.toLowerCase()} come alive.
                   </p>
                 </div>
               </div>
