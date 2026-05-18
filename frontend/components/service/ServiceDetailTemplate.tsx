@@ -354,14 +354,14 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
               <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-transparent to-transparent">
                 <div className="h-full w-full min-h-[220px] md:min-h-[300px] lg:min-h-[360px]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
-                <div className="absolute left-6 bottom-6 right-6">
-                  <div className="rounded-3xl bg-gradient-to-t from-black/70 via-black/40 to-transparent p-6 max-h-64 sm:max-h-72 md:max-h-80 lg:max-h-96 overflow-auto">
+                <div className="absolute inset-6 flex items-start">
+                  <div className="rounded-3xl bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 w-full md:max-h-[65vh] md:overflow-auto">
                     <p className="text-xs uppercase tracking-[0.24em] text-emerald-300">Key outcomes</p>
                     <div className="mt-3 grid gap-3">
-                      {service.highlights && service.highlights.slice(0, 3).map((h) => (
+                      {service.highlights && service.highlights.map((h) => (
                         <div key={h.title}>
                           <p className="text-sm font-semibold text-white">{h.title}</p>
-                          <p className="mt-1 text-sm text-slate-200 leading-5 line-clamp-3">{h.description}</p>
+                          <p className="mt-1 text-sm text-slate-200 leading-5">{h.description}</p>
                         </div>
                       ))}
                     </div>
