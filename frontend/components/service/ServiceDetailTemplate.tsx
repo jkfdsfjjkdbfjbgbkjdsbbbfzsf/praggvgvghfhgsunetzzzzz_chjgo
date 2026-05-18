@@ -350,15 +350,9 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
               </div>
             </div>
 
-            <div className={`rounded-[2rem] p-4 shadow-xl ${heroTheme.cardClass}`}>
-              <div className="relative overflow-hidden rounded-[1.75rem] bg-slate-900 shadow-inner shadow-slate-900/10">
-                <Image
-                  src={service.heroImage}
-                  alt={service.title}
-                  width={1200}
-                  height={760}
-                  className="h-full w-full object-cover"
-                />
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-transparent to-transparent">
+                <div className="h-full w-full min-h-[220px] md:min-h-[300px] lg:min-h-[360px]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
                 <div className="absolute left-6 bottom-6 right-6">
                   <div className="rounded-3xl bg-gradient-to-t from-black/70 via-black/40 to-transparent p-6 max-h-64 sm:max-h-72 md:max-h-80 lg:max-h-96 overflow-auto">
@@ -372,7 +366,7 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
                       ))}
                     </div>
 
-                    {/* Recent case removed per request */}
+                    {/* Image removed per request; content retained in overlay */}
                   </div>
                 </div>
               </div>
